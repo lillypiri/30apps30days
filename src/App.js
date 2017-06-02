@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import pockybebe from './images/blinky.gif';
+import spocky from './images/pocky1.png';
 import './App.css';
 
 class App extends Component {
@@ -35,9 +36,10 @@ class Pocky extends Component {
 
     render() {
         return (
-            <div className="pocky">
-                <img src={pockybebe} className="pocky" alt="pocky" onClick={this.handleClick} />
-                {this.state.isPockyOn ? 'ON' : 'OFF'}
+            <div className="collectItems">
+                {this.state.isPockyOn &&
+                    <img src={spocky} className="spocky" alt="spocky" onClick={this.handleClick}/>
+                }
             </div>
         );
     }

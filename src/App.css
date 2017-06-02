@@ -15,7 +15,7 @@
     padding: 20px 20px 20px;
 }
 .collectItems:hover {
-    transform: rotate(360deg);
+    transform: rotate(3deg);
 }
 
 .title {
