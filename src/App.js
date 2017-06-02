@@ -58,7 +58,7 @@ class Pocky extends Component {
     }
 
     collectedItem(item) {
-        if (this.state.items.length == 6) {
+        if (this.state.items.length === 6) {
             this.props.onDone(true);
         }
         this.setState(prevState => ({
@@ -69,25 +69,25 @@ class Pocky extends Component {
     render() {
         return (
             <div className="collectItems">
-                {this.state.items.indexOf("spocky1") == -1 &&
+                {this.state.items.indexOf("spocky1") === -1 &&
                     <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky1")}/>
                 }
-                {this.state.items.indexOf("gpocky1") == -1 &&
+                {this.state.items.indexOf("gpocky1") === -1 &&
                     <img src={gpocky} className="item" alt="gpocky" onClick={e => this.collectedItem("gpocky1")}/>
                 }
-                {this.state.items.indexOf("cpocky1") == -1 &&
+                {this.state.items.indexOf("cpocky1") === -1 &&
                     <img src={cpocky} className="item" alt="cpocky" onClick={e => this.collectedItem("cpocky1")}/>
                 }
-                {this.state.items.indexOf("spocky") == -1 &&
+                {this.state.items.indexOf("spocky") === -1 &&
                     <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky")}/>
                 }
-                {this.state.items.indexOf("gpocky") == -1 &&
+                {this.state.items.indexOf("gpocky") === -1 &&
                     <img src={gpocky} className="item" alt="gpocky" onClick={e => this.collectedItem("gpocky")}/>
                 }
-                {this.state.items.indexOf("cpocky") == -1 &&
+                {this.state.items.indexOf("cpocky") === -1 &&
                     <img src={cpocky} className="item" alt="cpocky" onClick={e => this.collectedItem("cpocky")}/>
                 }
-                {this.state.items.indexOf("spocky3") == -1 &&
+                {this.state.items.indexOf("spocky3") === -1 &&
                     <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky3")}/>
                 }
 
