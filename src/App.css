@@ -10,6 +10,14 @@
     transform: rotate(3deg);
 }
 
+.collectItems {
+    height: 100%;
+    padding: 20px 20px 20px;
+}
+.collectItems:hover {
+    transform: rotate(360deg);
+}
+
 .title {
     color: coral;
     margin-bottom: 10px;

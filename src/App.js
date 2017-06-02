@@ -12,9 +12,35 @@ class App extends Component {
         <p className="title">
         DAY 1: We're going to need snacks and magic for this - collect the pocky and stars!
         </p>
+        <Pocky />
       </div>
     );
   }
+}
+// I'm using states (because the data is changing) to make the Pocky and stars appear and disappear.
+// The props need to be set up even though they won't be used.
+class Pocky extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {isPockyOn: true};
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState(prevState => ({
+            isPockyOn: !prevState.isPockyOn
+        }));
+    }
+
+    render() {
+        return (
+            <div className="pocky">
+                <img src={pockybebe} className="pocky" alt="pocky" onClick={this.handleClick} />
+                {this.state.isPockyOn ? 'ON' : 'OFF'}
+            </div>
+        );
+    }
 }
 
 export default App;
