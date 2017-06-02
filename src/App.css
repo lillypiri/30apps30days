@@ -1,17 +1,36 @@
 .App {
   text-align: center;
 }
+@media only screen and (max-width: 500px){
+    .App {
+        font-size: 26px;
+    }
+}
 
 .pocky {
   height: 100%;
   padding: 20px 20px 65px;
+  animation-duration: 4s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
 }
 .pocky:hover {
     transform: rotate(3deg);
 }
+@media only screen and (max-width: 500px){
+    .pocky {
+        width: 70%;
+    }
+}
 
-.collectItems {
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.item {
     height: 100%;
+    padding: 20px;
     display: inline-block;
     animation-duration: 3s;
     animation-name: wiggle;
@@ -30,11 +49,24 @@
     }
 }
 
+.button {
+    border-radius: 50%;
+    background-color: pink;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    outline: none;
+    font-family: 'VT323', monospace;
+}
+
 .title {
     color: coral;
     margin-bottom: 10px;
     padding: 20px;
     font-size: 20px;
+    line-height: 30px;
 }
 
 .App-header {

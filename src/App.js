@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import pockybebe from './images/blinky.gif';
 import spocky from './images/pocky1.png';
+import gpocky from './images/gpocky.png';
+import cpocky from './images/cpocky.png';
 import './App.css';
 
 class App extends Component {
@@ -12,14 +14,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <h2>30 apps in 30 days</h2>
+
           {this.state.isDone &&
               <img src={pockybebe} className="pocky" alt="pocky" />
           }
-          <h2>30 apps in 30 days</h2>
+
         <p className="title">
-        DAY 1: We're going to need snacks and magic for this - collect the pocky and stars!
+        {!this.state.isDone &&
+            <div>We're going to need snacks for this..</div>
+            }
+
+            {this.state.isDone &&
+                <div> Yum! I feel like I could make at least 29 more apps now.. </div>
+            }
+
+
+        DAY 1: Collect the pocky!
         </p>
-        <Pocky onDone={e => this.setState({ isDone: true })} />
+        <Pocky onDone={isDone => this.setState({ isDone })} />
       </div>
     );
   }
@@ -29,24 +42,57 @@ class App extends Component {
 class Pocky extends Component {
     constructor(props) {
         super(props);
-        this.state = {isPockyOn: true};
+        this.state = {
+            items: []
+        };
+        this.reset = this.reset.bind(this);
 
-        this.handleClick = this.handleClick.bind(this);
+        this.collectedItem = this.collectedItem.bind(this);
     }
 
-    handleClick() {
+    reset () {
+        this.setState({
+            items: []
+        })
+        this.props.onDone(false);
+    }
+
+    collectedItem(item) {
+        if (this.state.items.length == 6) {
+            this.props.onDone(true);
+        }
         this.setState(prevState => ({
-            isPockyOn: !prevState.isPockyOn
+            items: prevState.items.concat(item)
         }));
-        this.props.onDone();
     }
 
     render() {
         return (
             <div className="collectItems">
-                {this.state.isPockyOn &&
-                    <img src={spocky} className="spocky" alt="spocky" onClick={this.handleClick}/>
+                {this.state.items.indexOf("spocky1") == -1 &&
+                    <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky1")}/>
                 }
+                {this.state.items.indexOf("gpocky1") == -1 &&
+                    <img src={gpocky} className="item" alt="gpocky" onClick={e => this.collectedItem("gpocky1")}/>
+                }
+                {this.state.items.indexOf("cpocky1") == -1 &&
+                    <img src={cpocky} className="item" alt="cpocky" onClick={e => this.collectedItem("cpocky1")}/>
+                }
+                {this.state.items.indexOf("spocky") == -1 &&
+                    <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky")}/>
+                }
+                {this.state.items.indexOf("gpocky") == -1 &&
+                    <img src={gpocky} className="item" alt="gpocky" onClick={e => this.collectedItem("gpocky")}/>
+                }
+                {this.state.items.indexOf("cpocky") == -1 &&
+                    <img src={cpocky} className="item" alt="cpocky" onClick={e => this.collectedItem("cpocky")}/>
+                }
+                {this.state.items.indexOf("spocky3") == -1 &&
+                    <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky3")}/>
+                }
+                <div>
+                    <button className="button" onClick={this.reset}>Play Again!</button>
+                </div>
             </div>
         );
     }
