@@ -20,7 +20,7 @@ class App extends Component {
               <img src={pockybebe} className="pocky" alt="pocky" />
           }
 
-        <p className="title">
+        <div className="title">
         {!this.state.isDone &&
             <div>We're going to need snacks for this..</div>
             }
@@ -31,7 +31,7 @@ class App extends Component {
 
 
         DAY 1: Collect the pocky!
-        </p>
+        </div>
         <Pocky isDone={this.state.isDone} onDone={isDone => this.setState({ isDone })} />
       </div>
     );
