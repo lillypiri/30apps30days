@@ -13,6 +13,8 @@
   animation-duration: 4s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .pocky:hover {
     transform: rotate(3deg);
@@ -57,8 +59,14 @@
     font-size: 20px;
     text-align: center;
     padding: 15px;
+    margin: 30px;
     outline: none;
     font-family: 'VT323', monospace;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: mediumturquoise;
 }
 
 .title {
@@ -67,6 +75,24 @@
     padding: 20px;
     font-size: 20px;
     line-height: 30px;
+}
+
+.footer {
+    color: coral;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    transition: all 0.4s ease-in-out;
+}
+.footer a {
+    color: coral;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: mediumturquoise;
+    text-decoration: none;
 }
 
 .App-header {
