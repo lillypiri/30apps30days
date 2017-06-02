@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-size: 30px;
+  color: mediumturquoise;
 }
 @media only screen and (max-width: 500px){
     .App {

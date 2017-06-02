@@ -32,7 +32,7 @@ class App extends Component {
 
         DAY 1: Collect the pocky!
         </p>
-        <Pocky onDone={isDone => this.setState({ isDone })} />
+        <Pocky isDone={this.state.isDone} onDone={isDone => this.setState({ isDone })} />
       </div>
     );
   }
@@ -90,10 +90,12 @@ class Pocky extends Component {
                 {this.state.items.indexOf("spocky3") == -1 &&
                     <img src={spocky} className="item" alt="spocky" onClick={e => this.collectedItem("spocky3")}/>
                 }
-                <div>
-                    <button className="button" onClick={this.reset}>Play Again!</button>
-                </div>
 
+                {this.props.isDone &&
+                    <div>
+                        <button className="button" onClick={this.reset}>Play Again!</button>
+                    </div>
+                }
                 <div className="footer">
                     Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
                     <div>
