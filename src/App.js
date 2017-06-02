@@ -4,16 +4,22 @@ import spocky from './images/pocky1.png';
 import './App.css';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state ={isDone: false};
+    }
+
   render() {
     return (
       <div className="App">
-
-          <img src={pockybebe} className="pocky" alt="pocky" />
+          {this.state.isDone &&
+              <img src={pockybebe} className="pocky" alt="pocky" />
+          }
           <h2>30 apps in 30 days</h2>
         <p className="title">
         DAY 1: We're going to need snacks and magic for this - collect the pocky and stars!
         </p>
-        <Pocky />
+        <Pocky onDone={e => this.setState({ isDone: true })} />
       </div>
     );
   }
@@ -32,6 +38,7 @@ class Pocky extends Component {
         this.setState(prevState => ({
             isPockyOn: !prevState.isPockyOn
         }));
+        this.props.onDone();
     }
 
     render() {
