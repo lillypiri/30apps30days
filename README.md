@@ -1,3 +1,6 @@
+
+This is my 30 apps in 30 days project. Wish me luck!
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
