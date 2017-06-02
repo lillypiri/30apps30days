@@ -12,10 +12,22 @@
 
 .collectItems {
     height: 100%;
-    padding: 20px 20px 20px;
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
 }
-.collectItems:hover {
-    transform: rotate(3deg);
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
 }
 
 .title {
