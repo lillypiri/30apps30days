@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './app.css';
+import './App.css';
 import Day1 from './day1';
 import Day2 from './day2';
 
@@ -26,7 +26,7 @@ class App extends Component {
         return (
             <div>
                 <div className="app-switcher">
-                    Pick a day: 
+                    Pick a day:
                     <div className="app-button" onClick={e => this.setState({ current_app: 0 })} >
                         1
                     </div>
