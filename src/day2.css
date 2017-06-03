@@ -4,11 +4,17 @@
   font-size: 30px;
   color: mediumturquoise;
   margin: 30px;
+  max-width: 100%;
 }
-@media only screen and (max-width: 500px){
-    .header {
-        font-size: 26px;
-    }
+
+
+.puzzle {
+    text-align: center;
+}
+
+
+.buttons {
+    max-width: 100%;
 }
 
 .button {
@@ -27,4 +33,51 @@
 
 .button:hover {
     background-color: mediumturquoise;
+}
+
+
+.images {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.success, .failure {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 500px){
+    .button {
+        margin: 5px;
+    }
+    .header {
+        margin: 5px;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+    .success, .failure {
+        padding: 0 10px;
+    }
+}
+
+.footer {
+    color: coral;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+.footer a {
+    color: coral;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: mediumturquoise;
+    text-decoration: none;
 }

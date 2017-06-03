@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import baby from './images/baby.png';
+import goblin from './images/goblin.png';
+import lab from './images/lab.gif';
 import './day2.css';
 
 
@@ -13,26 +15,31 @@ class Day2 extends Component {
 
     render() {
         return (
-            <div className="header">
+            <div>
 
                 {this.state.isSolved === 'yes' &&
-                    <div>
-                        <img src={baby} className="baby" alt="baby" />
+                    <div className="success">
+                        <img src={baby} className="images" alt="baby" onClick={e => this.setState({ isSolved: "" })} />
                         Yay! I'm not going to be a goblin!
                     </div>
                 }
 
                 {this.state.isSolved === 'no' &&
-                    <div>
-                        <img src={baby} className="baby" alt="baby" />
-                        Oh no I am a goblin!
+                    <div className="failure">
+                        <img src={goblin} className="images" alt="goblin" onClick={e => this.setState({ isSolved: "" })} />
+                        What have you done to me!?
                     </div>
                 }
 
                 {this.state.isSolved === '' &&
-                    <div>
-                        Which path leads through the labyrinth?
-                        <div>
+                    <div className="puzzle">
+                        <div className="header">
+                            DAY 2: Which path leads through the labyrinth?
+                        </div>
+
+                        <img src={lab} className="images" alt="lab" />
+
+                        <div className="buttons">
                             <button className="button" onClick={e => this.setState({ isSolved: 'yes'})}>A</button>
 
                             <button className="button" onClick={e => this.setState({ isSolved: 'no'})}>B</button>
@@ -41,6 +48,15 @@ class Day2 extends Component {
                         </div>
                     </div>
 
+                }
+
+                {this.state.isSolved === '' &&
+                    <div className="footer">
+                        Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
+                        <div>
+                            Artwork by <a href="https://lillypiri.com">Lilly Piri</a>.
+                        </div>
+                    </div>
                 }
             </div>
         );
