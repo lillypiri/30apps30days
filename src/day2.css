@@ -1,0 +1,30 @@
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  color: mediumturquoise;
+  margin: 30px;
+}
+@media only screen and (max-width: 500px){
+    .header {
+        font-size: 26px;
+    }
+}
+
+.button {
+    border-radius: 50%;
+    background-color: pink;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+    outline: none;
+    font-family: 'VT323', monospace;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: mediumturquoise;
+}
