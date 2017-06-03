@@ -9,6 +9,20 @@
     }
 }
 
+.app-switcher {
+    font-size: 30px;
+    text-align: center;
+    background: gray;
+    color: white;
+    text-transform: uppercase;
+}
+
+.app-button {
+    display: inline-block;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
 .footer {
     color: coral;
     margin-bottom: 10px;

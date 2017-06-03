@@ -7,20 +7,36 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            current_app: 1
+            current_app: 0
         }
     }
     render() {
+        var day = null;
+
         switch (this.state.current_app) {
             case 0:
-                return (<Day1 />)
+                day = (<Day1 />)
                 break;
             case 1:
-            return (<Day2 />)
-            break;
+                day = (<Day2 />)
+                break;
             default:
 
         }
+        return (
+            <div>
+                <div className="app-switcher">
+                    Pick a day: 
+                    <div className="app-button" onClick={e => this.setState({ current_app: 0 })} >
+                        1
+                    </div>
+                    <div className="app-button" onClick={e => this.setState({ current_app: 1 })} >
+                        2
+                    </div>
+                </div>
+                {day}
+            </div>
+        )
     }
 }
 
