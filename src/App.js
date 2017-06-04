@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Day1 from './day1';
 import Day2 from './day2';
+import Day3 from './day3';
 
 class App extends Component {
     constructor(props) {
@@ -20,6 +21,9 @@ class App extends Component {
             case 1:
                 day = (<Day2 />)
                 break;
+            case 2:
+                day = (<Day3 />)
+                break;
             default:
 
         }
@@ -32,6 +36,9 @@ class App extends Component {
                     </div>
                     <div className="app-button" onClick={e => this.setState({ current_app: 1 })} >
                         2
+                    </div>
+                    <div className="app-button" onClick={e => this.setState({ current_app: 2 })} >
+                        3
                     </div>
                 </div>
                 {day}

@@ -6,6 +6,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-scripts": "1.0.7",
+    "every-dice": "1.0.1",
     "serve": "^5.1.5"
   },
   "devDependencies": {
