@@ -1,0 +1,11 @@
+.kitty {
+    display: block;
+    margin: auto;
+    width: 360px;
+}
+
+
+.dice {
+    text-align: center;
+    font-size: 40px;
+}

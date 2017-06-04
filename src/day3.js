@@ -9,7 +9,16 @@ class Dice extends Component {
     render() {
         return(
             <div>
-                {roll()}
+                <div className="header">
+                    Let's roll some dice!
+                </div>
+
+                <div className="kitty">
+                    <img src={kitty} />
+                </div>
+                <div className="dice">
+                    {roll()}
+                </div>
             </div>
         )
     }
