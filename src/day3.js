@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import kitty_rolled from './images/kitty.gif';
-import kitty_waiting from './images/kitty.gif';
+import kitty_waiting from './images/kitty_waiting.gif';
 import './day3.css';
 
 const roll = require("every-dice");
@@ -48,9 +48,9 @@ class Dice extends Component {
                         Roll again?
                     </div>
                 }
-                
+
                 <div className="kitty">
-                    <img src={this.state.isRolled ? kitty_rolled : kitty_waiting} onClick={e => this.onKittyClick()}/>
+                    <img src={this.state.isRolled ? kitty_waiting : kitty_rolled } onClick={e => this.onKittyClick()}/>
                 </div>
                 <div className="dice">
                     {this.state.isRolled ? this.state.rollNumber : ''}

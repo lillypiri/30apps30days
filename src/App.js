@@ -8,7 +8,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            current_app: 0
+            current_app: 2
         }
     }
     render() {
