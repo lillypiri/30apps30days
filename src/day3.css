@@ -3,6 +3,7 @@
     margin: auto;
     width: 360px;
     max-width: 100%;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 500px){
@@ -14,6 +15,13 @@
 
 .dice {
     text-align: center;
+    line-height: 50px;
     font-size: 40px;
-    padding-bottom: 30px;
+    background-color: white;
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 6px;
 }

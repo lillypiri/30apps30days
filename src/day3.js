@@ -50,12 +50,14 @@ class Dice extends Component {
                 }
 
                 <div className="kitty">
-                    <img src={this.state.isRolled ? kitty_waiting : kitty_rolled } onClick={e => this.onKittyClick()}/>
-                </div>
-                <div className="dice">
-                    {this.state.isRolled ? this.state.rollNumber : ''}
+                    <img src={this.state.isRolled ? kitty_waiting : kitty_rolled } onClick={e => this.onKittyClick()} alt="kitty"/>
                 </div>
 
+                {this.state.isRolled &&
+                    <div className="dice">
+                        {this.state.rollNumber}
+                    </div>
+                }
 
                 <div className="footer">
                     Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
