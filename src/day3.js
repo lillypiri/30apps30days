@@ -37,10 +37,18 @@ class Dice extends Component {
     render() {
         return(
             <div>
-                <div className="header">
-                    Let's roll some dice!
-                </div>
+                {!this.state.isRolled &&
+                    <div className="header">
+                        Let's roll some dice!
+                    </div>
+                }
 
+                {this.state.isRolled &&
+                    <div className="header">
+                        Roll again?
+                    </div>
+                }
+                
                 <div className="kitty">
                     <img src={this.state.isRolled ? kitty_rolled : kitty_waiting} onClick={e => this.onKittyClick()}/>
                 </div>
