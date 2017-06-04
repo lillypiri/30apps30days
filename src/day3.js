@@ -13,6 +13,25 @@ class Dice extends Component {
                 isRolled: false,
                 rollNumber: roll()
             };
+            this.reset = this.reset.bind(this);
+            this.onKittyClick = this.onKittyClick.bind(this);
+        }
+
+        reset () {
+            this.setState ({
+                isRolled: false,
+                rollNumber: roll()
+            })
+        }
+
+        onKittyClick () {
+            if (this.state.isRolled) {
+                this.reset()
+            } else {
+                this.setState ({
+                    isRolled: true
+                });
+            }
         }
 
     render() {
@@ -23,7 +42,7 @@ class Dice extends Component {
                 </div>
 
                 <div className="kitty">
-                    <img src={this.state.isRolled ? kitty_rolled : kitty_waiting} onClick={e => this.setState({ isRolled: true })}/>
+                    <img src={this.state.isRolled ? kitty_rolled : kitty_waiting} onClick={e => this.onKittyClick()}/>
                 </div>
                 <div className="dice">
                     {this.state.isRolled ? this.state.rollNumber : ''}
