@@ -1,5 +1,8 @@
 
 This is my 30 apps in 30 days project. I am using React JS.
+
+The project is hosted at: https://th1rty.herokuapp.com/
+
 Wish me luck!
 
 
