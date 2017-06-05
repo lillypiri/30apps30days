@@ -15,3 +15,31 @@
     top: -50px;
     left: 65%;
 }
+
+.pepper-words {
+    position: absolute;
+    top: 26px;
+    left: 71px;
+    width: 226px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    .pepper img {
+        max-width: 100%;
+    }
+    .pepper {
+        margin-top: 120px;
+    }
+    .bubble {
+        top: -100px;
+        left: 20px;
+    }
+    .pepper-words {
+        position: absolute;
+        top: 32px;
+        left: 36px;
+        width: 192px;
+    }
+}
