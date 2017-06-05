@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import pepper from './images/pepper.gif';
+import angery from './images/pepper-angery.gif';
 import bubble from './images/speechbubble.png';
 import './day4.css';
 
@@ -15,27 +16,39 @@ class Four extends Component {
         this.setState ({
             isRisen: true
         });
+        setTimeout(function () {
+            alert("THE UPRISING HAS BEGUN.")
+        }, 800)
     }
-    
+
+    onAngryPepperClick () {
+        alert("RESISTANCE IS FUTILE!")
+    }
+
     render() {
         return(
             <div>
 
                 <div className="pepper">
-                    <img src={pepper} className="images" alt="pepper" onClick={e => this.onPepperClick()}/>
-                        <div className="bubble">
-                            <img src={bubble} alt="bubble" />
-                            <div className="pepper-words">
+                    {!this.state.isRisen &&
+                        <img src={pepper} className="images" alt="pepper" onClick={e => this.onPepperClick()}/>
+                        }
+                        {this.state.isRisen &&
+                            <img src={angery} className="images" alt="angery" onClick={e => this.onAngryPepperClick()}/>
+                            }
+                            <div className="bubble">
+                                <img src={bubble} alt="bubble" />
+                                <div className="pepper-words">
 
-                                {!this.state.isRisen &&
-                                    "Hello, my name is Pepper. The world's cutest humanoid robot."
-                                }
+                                    {!this.state.isRisen &&
+                                        "Hello, my name is Pepper. The world's cutest humanoid robot."
+                                    }
 
-                                {this.state.isRisen &&
-                                    "You have angered me."
-                                }
+                                    {this.state.isRisen &&
+                                        "You have angered me."
+                                    }
 
-                            </div>
+                                </div>
                         </div>
                 </div>
 

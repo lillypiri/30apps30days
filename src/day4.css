@@ -7,6 +7,7 @@
     position: relative;
     margin-top: 70px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .bubble {
@@ -38,8 +39,9 @@
     }
     .pepper-words {
         position: absolute;
-        top: 32px;
-        left: 36px;
+        top: 17px;
+        left: 33px;
         width: 192px;
+        font-size: 18px;
     }
 }
