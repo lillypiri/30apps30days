@@ -9,7 +9,7 @@ class Four extends Component {
                 <div className="header">
                     test
                 </div>
-                <div>
+                <div className="pepper">
                     <img src={pepper} className="images" alt="pepper" />
                 </div>
             </div>
