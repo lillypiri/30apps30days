@@ -3,18 +3,15 @@
     border-radius: 50%;
     width: 300px;
     height: 400px;
-    display: inline-block;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    margin: auto;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .bubble {
     position: absolute;
     z-index: 1;
-    top: 15%;
-    left: 55%;
+    top: -50px;
+    left: 65%;
 }
