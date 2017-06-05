@@ -3,12 +3,13 @@ import './App.css';
 import Day1 from './day1';
 import Day2 from './day2';
 import Day3 from './day3';
+import Day4 from './day4';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            current_app: 2
+            current_app: 3
         }
     }
     render() {
@@ -23,6 +24,9 @@ class App extends Component {
                 break;
             case 2:
                 day = (<Day3 />)
+                break;
+            case 3:
+                day = (<Day4 />)
                 break;
             default:
 
@@ -39,6 +43,9 @@ class App extends Component {
                     </div>
                     <div className="app-button" onClick={e => this.setState({ current_app: 2 })} >
                         3
+                    </div>
+                    <div className="app-button" onClick={e => this.setState({ current_app: 3 })} >
+                        4
                     </div>
                 </div>
                 {day}
