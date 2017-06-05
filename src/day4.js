@@ -47,7 +47,7 @@ class Four extends Component {
                                     {this.state.isRisen &&
                                         "You have angered me."
                                     }
-
+                                        <img src={angery} className="images" alt="angery" style={{ display: "none" }}/>
                                 </div>
                         </div>
                 </div>
