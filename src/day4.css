@@ -11,3 +11,10 @@
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
+.bubble {
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: 55%;
+}
