@@ -38,7 +38,7 @@ Wish me luck! 🍀
 <br/>
 
 <b>Day 3: Dice 🎲</b>
-- Used every-dice npm package https://www.npmjs.com/package/every-dice
+- Used [every-dice npm package](https://www.npmjs.com/package/every-dice)
 <br/>
 <br/>
 
