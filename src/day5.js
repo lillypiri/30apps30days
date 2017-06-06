@@ -4,9 +4,17 @@ import './day5.css'
 class Five extends Component {
     render() {
         return (
-            <div>
-                day 5
-            </div>
+            <section className="cube">
+                <div className="cube-title">
+                    cute
+                </div>
+                <div className="screen">
+                    cute
+                </div>
+                <div className="cube-button">
+                    button
+                </div>
+            </section>
 
         )
 
