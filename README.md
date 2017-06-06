@@ -16,3 +16,9 @@ Day 2: Escape the Labyrinth/Save Toby 👶
 
 Day 3: Dice 🎲
 - Used every-dice npm package https://www.npmjs.com/package/every-dice
+
+Day 4: Pepper 🤖
+
+Day 5: Good Egg 🥚
+- Used CSS to make the virtual pet.
+- Uses a switch case for the cat's emotions.
