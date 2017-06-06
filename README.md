@@ -6,19 +6,19 @@ What is this project?
 Each day I will attempt to make one React webapp.
 
 I used these resources to get me started with React:
-- [Free Code Camp](https://www.freecodecamp.com/)'s JavaScript exercises 
+- [Free Code Camp](https://www.freecodecamp.com/)'s JavaScript exercises
 - [exercism](http://exercism.io/)
 - [React Documentation](https://facebook.github.io/react/)
 
 
-The project is hosted at: https://th1rty.herokuapp.com/
+<b>The project is hosted at [th1rty.herokuapp.com](https://th1rty.herokuapp.com/).</b>
 
 Wish me luck! 🍀
 
 
-🎨 For the artwork, I use:
+🎨 <b>For the artwork, I use:</b>
 - my own watercolour paintings
-- Piskel Sprite Editor to create the digital art and gifs: http://www.piskelapp.com/
+- [Piskel Sprite Editor](http://www.piskelapp.com/) to create the digital art and gifs.
 
 <b>Day 1: Collect Pocky 😋</b>
 
