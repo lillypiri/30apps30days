@@ -10,16 +10,20 @@ Wish me luck!
 - my own watercolour paintings
 - Piskel Sprite Editor to create the digital art and gifs: http://www.piskelapp.com/
 
-Day 1: Collect Pocky 😋
+<b>Day 1: Collect Pocky 😋</b>
 
-Day 2: Escape the Labyrinth/Save Toby 👶
 
-Day 3: Dice 🎲
+<b>Day 2: Escape the Labyrinth/Save Toby 👶</b>
+
+
+<b>Day 3: Dice 🎲</b>
 - Used every-dice npm package https://www.npmjs.com/package/every-dice
 
-Day 4: Pepper 🤖
 
-Day 5: Good Egg 🥚
+<b>Day 4: Pepper 🤖</b>
+- Uses alerts.
+
+<b>Day 5: Good Egg 🥚</b>
 - Used CSS to make the virtual pet.
 - Uses a switch case for the cat's emotions.
 
