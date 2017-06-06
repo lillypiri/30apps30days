@@ -12,8 +12,13 @@ class Five extends Component {
     }
 
     onButtonClick () {
+        var newmood = Math.floor(Math.random()*3)
+
+        while (newmood === this.state.mood) {
+            newmood = Math.floor(Math.random()*3)
+        }  
         this.setState ({
-            mood: Math.floor(Math.random()*3)
+            mood: newmood
         });
     }
 
