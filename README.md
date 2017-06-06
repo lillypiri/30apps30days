@@ -1,12 +1,19 @@
 
 <b>This is my 30 apps in 30 days project. I am using React JS.</b>
 
+What is this project?
 
+Each day I will attempt to make one React webapp.
+
+I used these resources to get me started with React:
+- [Free Code Camp](https://www.freecodecamp.com/)'s JavaScript exercises 
+- [exercism](http://exercism.io/)
+- [React Documentation](https://facebook.github.io/react/)
 
 
 The project is hosted at: https://th1rty.herokuapp.com/
 
-Wish me luck! 🍀 
+Wish me luck! 🍀
 
 
 🎨 For the artwork, I use:
