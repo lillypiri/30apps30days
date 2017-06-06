@@ -23,4 +23,4 @@ Day 5: Good Egg 🥚
 - Used CSS to make the virtual pet.
 - Uses a switch case for the cat's emotions.
 
-<img src="https://giphy.com/gifs/cute-pixel-css-l0IydJ8PcTC3dBtpS">
+![alt text](https://giphy.com/gifs/cute-pixel-css-l0IydJ8PcTC3dBtpS "Description goes here")
