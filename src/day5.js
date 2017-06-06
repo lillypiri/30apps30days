@@ -139,27 +139,37 @@ class Five extends Component {
 
         }
         return (
-            <section className="cube">
-                <div className="cube-title">
-                    <div>good</div>
-                    <div>egg</div>
-                    <div className="brand-text">
-                        by piri
+            <div>
+                <section className="cube">
+                    <div className="cube-title">
+                        <div>good</div>
+                        <div>egg</div>
+                        <div className="brand-text">
+                            by piri
+                        </div>
+                    </div>
+                    <div className="screen">
+                        <div className="screen-text">
+                            {screen}
+                            </div>
+                    </div>
+                    <div className="cube-button" onClick={e => this.onButtonClick()}>
+                        ❤
+                    </div>
+                </section>
+
+                <div className="footer">
+                    Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
+                    <div>
+                        Artwork by <a href="https://lillypiri.com">Lilly Piri</a>.
                     </div>
                 </div>
-                <div className="screen">
-                    <div className="screen-text">
-                        {screen}
-                        </div>
-                </div>
-                <div className="cube-button" onClick={e => this.onButtonClick()}>
-                    ❤
-                </div>
-            </section>
+            </div>
 
         )
 
     }
+
 }
 
 export default Five;
