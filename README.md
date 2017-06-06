@@ -1,5 +1,5 @@
 
-<b>This is my 30 apps in 30 days project. I am using React JS.</b>
+<b>This is my 30 apps in 30 days project.</b>
 <br/>
 <br/>
 
