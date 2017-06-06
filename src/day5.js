@@ -23,6 +23,9 @@ class Five extends Component {
                 <div className="cube-title">
                     <div>good</div>
                     <div>egg</div>
+                    <div className="brand-text">
+                        by piri
+                    </div>
                 </div>
                 <div className="screen">
                     <div className="screen-text">
