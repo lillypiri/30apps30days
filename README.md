@@ -6,48 +6,56 @@
 ## What is this project?
 
 Each day I will attempt to make one React webapp.
+Wish me luck! 🍀
 
-I used these resources to get me started with React:
+##### I used these resources to get me started with React:
 - [Free Code Camp](https://www.freecodecamp.com/)'s JavaScript exercises
 - [exercism](http://exercism.io/)
 - [React Documentation](https://facebook.github.io/react/)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 <br/>
 <br/>
 <br/>
 
-## <b>The project is hosted at [th1rty.herokuapp.com](https://th1rty.herokuapp.com/).</b>
+## The project is hosted at [th1rty.herokuapp.com](https://th1rty.herokuapp.com/).
 
-Wish me luck! 🍀
 <br/>
 <br/>
 <br/>
 
-### 🎨 <b>For the artwork, I use:</b>
-- my own watercolour paintings
+### 🎨 The art is made with:
+- Watercolours
 - [Piskel Sprite Editor](http://www.piskelapp.com/) to create the digital art and gifs.
+- CSS.
 <br/>
 <br/>
 <br/>
 
-### <b>Day 1: Collect Pocky 😋</b>
+### Day 1: Collect Pocky 😋
+- Collect the Pocky for Mags the Kitten.
+- Basic React states.
 <br/>
 <br/>
 
-### <b>Day 2: Escape the Labyrinth/Save Toby 👶</b>
+### Day 2: Escape the Labyrinth/Save Toby 👶
+- Save Toby from being turned into a Goblin by Jareth.
+- Super basic React states.
 <br/>
 <br/>
 
-### <b>Day 3: Dice 🎲</b>
+### Day 3: Dice 🎲
+- Cat rolls a dice on click.
 - Used [every-dice npm package](https://www.npmjs.com/package/every-dice)
 <br/>
 <br/>
 
-### <b>Day 4: Pepper 🤖</b>
+### Day 4: Pepper 🤖
+- Pepper robot becomes angry.
 - Uses alerts.
 <br/>
 <br/>
 
-### <b>Day 5: Good Egg 🥚</b>
+### Day 5: Good Egg 🥚
 - Used CSS to make the virtual pet.
 - Uses a switch case for the cat's emotions.
 
