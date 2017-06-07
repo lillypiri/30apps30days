@@ -12,10 +12,19 @@ class GameGal extends Component {
 
         grid[10] = "😺";
         grid[27] = "🍟";
+        grid[29] = "🍓";
         grid[33] = "🍦";
+        grid[36] = "🍔";
+        grid[31] = "🥐";
         grid[5] = "🍭";
+        grid[9] = "🍑";
+        grid[1] = "🥑";
+        grid[41] = "🍉";
+        grid[44] = "🍏";
         grid[49] = "🍕";
         grid[12] = "🍒";
+        grid[16] = "🍌";
+        grid[24] = "🧀";
 
         this.state = {
             grid: grid,
@@ -42,7 +51,7 @@ class GameGal extends Component {
                 grid[player_position] = "😺";
                 break;
             case "down":
-                if (player_position > HEIGHT * (WIDTH -3)) return;
+                if (player_position > (HEIGHT -1) * WIDTH) return;
                 grid[player_position] = '☆';
                 player_position = player_position + WIDTH;
                 if (grid[player_position] !== "☆") {
