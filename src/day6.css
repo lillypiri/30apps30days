@@ -5,7 +5,7 @@
     border-top: 1px solid MediumTurquoise;
     border-bottom: 1px solid DarkTurquoise;
     box-shadow: 0 15px 20px rgba(0,0,0,0.3), 0 1px 3px DarkTurquoise, inset 0 1px 3px white, inset 0 -4px 5px MediumTurquoise;
-    width: 325px;
+    width: 320px;
     height: 400px;
     margin: auto;
     position: relative;
@@ -28,10 +28,6 @@
        height: 155px;
        width: 230px;
    }
-
-.gg-screen-row {
-
-}
 
 .gg-screen-text {
     text-align: left;
@@ -183,4 +179,42 @@
     text-shadow: 0 -1px 2px rgba(255,255,255,0.8), 0 1px 2px rgba(0,0,0,0.5), 0 -1px 1px white;
     font-size: 10px;
     line-height: 10px;
+}
+
+.gg-speakers {
+    text-shadow: 1px 1px grey;
+    outline: none;
+    color: #333;
+    padding: 1px 1px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    background: DarkGrey;
+    box-shadow: inset 0 3px 5px DarkGrey, 0 1px 1px black;
+    border-top: 1px solid #222;
+    color: BlanchedAlmond;
+    transition: all 0.2s ease;
+    width: 1px;
+    height: 1px;
+    display: block;
+    top: 350px;
+    left: 250px;
+    position: absolute;
+}
+
+
+
+
+.grid {
+
+}
+
+.row {
+
+}
+
+.cell {
+    display: inline-block;
+    width: 23px;
+    height: 15px;
 }

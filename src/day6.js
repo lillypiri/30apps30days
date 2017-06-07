@@ -1,8 +1,51 @@
 import React, {Component} from 'react';
 import './day6.css'
 
+const WIDTH = 10;
+const HEIGHT = 5;
 
 class GameGal extends Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            grid: new Array(WIDTH * HEIGHT).fill('☆'),
+            foods: 0,
+        }
+
+        this.state.grid[10] = "😺";
+        this.state.grid[27] = "🍟";
+        this.state.grid[33] = "🍦";
+        this.state.grid[5] = "🍭";
+        this.state.grid[49] = "🍕";
+        this.state.grid[12] = "🍒"; 
+    }
+
+
+    renderGrid () {
+        var rows = [];
+
+        for (var y = 0; y < HEIGHT; y++) {
+            rows.push(
+                <div className="row" key={y}>
+                    {this.state.grid.slice(y * WIDTH, (y * WIDTH) + WIDTH).map((cell, x) => {
+
+                        return (
+                            <div className="cell" key={x}>
+                                {this.state.grid[(y * WIDTH) + x]}
+                            </div>
+                        );
+                    })}
+                </div>
+            )
+        }
+        return (
+            <div className="grid">
+                {rows.map(row => row)}
+            </div>
+        );
+    }
+
+
     render () {
         return (
             <div>
@@ -10,14 +53,8 @@ class GameGal extends Component {
                     <div className="gg-screen">
                         <div className="gg-screen-text">
                             <div>
-                                <div>🍽 foods: </div>
-                                <div>☆                 .    ✧?</div>
-                                <div>     ^,,,,✿, </div>
-                                <div>      *:･ﾟ✧)*:･ﾟ✧ </div>
-                                <div>    (###,,--,,##)</div>
-                                <div>      (###,, , , ,,##)</div>
-                                <div>      ✿..(, 😺  ,(,,) ,,)~~~~!!!!</div>
-                                <div>   </div>
+                                <div>🍽 foods:</div>
+                                {this.renderGrid()}
                             </div>
                         </div>
                     </div>
@@ -40,7 +77,9 @@ class GameGal extends Component {
                     <div className="gg-button-right">
                     </div>
                     <div className="gg-button-down">
+                    </div>
 
+                    <div className="gg-speakers">
                     </div>
                 </section>
 
