@@ -66,3 +66,5 @@ Wish me luck! 🍀
 ## Day 6: Game Gal - mini food collecting game.
 - Used switch case for player direction.
 - Created a grid.
+
+![Game Gal gif](https://media.giphy.com/media/3og0IDf6weVX4zOtpu/giphy.gif "Game Gal in action")
