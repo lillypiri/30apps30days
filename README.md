@@ -62,3 +62,7 @@ Wish me luck! 🍀
 ![Good Egg gif](https://media.giphy.com/media/l0IydJ8PcTC3dBtpS/giphy.gif "Good Egg in action!")
 <br/>
 <br/>
+
+## Day 6: Game Gal - mini food collecting game.
+- Used switch case for player direction.
+- Created a grid.
