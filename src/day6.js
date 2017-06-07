@@ -10,28 +10,37 @@ class GameGal extends Component {
                     <div className="gg-screen">
                         <div className="gg-screen-text">
                             <div>
-                                <div>Life: 💖💖💖</div>
+                                <div>🍽 foods: </div>
                                 <div>☆                 .    ✧?</div>
                                 <div>     ^,,,,✿, </div>
                                 <div>      *:･ﾟ✧)*:･ﾟ✧ </div>
                                 <div>    (###,,--,,##)</div>
                                 <div>      (###,, , , ,,##)</div>
-                                <div>      ✿..(, 👻, ,(,,) ,,)~~~~!!!!</div>
+                                <div>      ✿..(, 😺  ,(,,) ,,)~~~~!!!!</div>
                                 <div>   </div>
                             </div>
                         </div>
                     </div>
                     <div className="gg-title">
-                        <div>gamegal</div>
+                        <div>
+                            game
+                            <span className="gg-title-small">
+                                gal
+                            </span>
+                        </div>
                         <div className="gg-brand-text">
                             by piri
                         </div>
                     </div>
-                    <div className="gg-button-a">
-                        a
+                    <div className="gg-button-up">
+
                     </div>
-                    <div className="gg-button-b">
-                        b
+                    <div className="gg-button-left">
+                    </div>
+                    <div className="gg-button-right">
+                    </div>
+                    <div className="gg-button-down">
+
                     </div>
                 </section>
 

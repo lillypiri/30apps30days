@@ -29,6 +29,10 @@
        width: 230px;
    }
 
+.gg-screen-row {
+
+}
+
 .gg-screen-text {
     text-align: left;
     font-size: 16px;
@@ -43,7 +47,7 @@
     margin-top: 20px;
 }
 
-.gg-button-a {
+.gg-button-up {
     cursor: pointer;
     text-shadow: 1px 1px grey;
     outline: none;
@@ -61,13 +65,15 @@
     border-top: 1px solid #222;
     color: BlanchedAlmond;
     transition: all 0.2s ease;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
-    margin-left: 225px;
+    position: absolute;
+    top: 240px;
+    left: 138px;
 }
 
-.gg-button-b {
+.gg-button-down {
     cursor: pointer;
     text-shadow: 1px 1px grey;
     outline: none;
@@ -85,20 +91,88 @@
     border-top: 1px solid #222;
     color: BlanchedAlmond;
     transition: all 0.2s ease;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
-    margin-left: 180px;
+    position: absolute;
+    top: 320px;
+    left: 138px;
+}
+
+.gg-button-left {
+    cursor: pointer;
+    text-shadow: 1px 1px grey;
+    outline: none;
+    color: #333;
+    font-family: 'Modak', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 7px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    background: Gold;
+    box-shadow: inset 0 3px 5px Goldenrod, 0 1px 3px black;
+    border-top: 1px solid #222;
+    color: BlanchedAlmond;
+    transition: all 0.2s ease;
+    width: 30px;
+    height: 30px;
+    display: block;
+    top: 281px;
+    left: 95px;
+    position: absolute;
+}
+
+.gg-button-right {
+    cursor: pointer;
+    text-shadow: 1px 1px grey;
+    outline: none;
+    color: #333;
+    font-family: 'Modak', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 7px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    background: Gold;
+    box-shadow: inset 0 3px 5px Goldenrod, 0 1px 3px black;
+    border-top: 1px solid #222;
+    color: BlanchedAlmond;
+    transition: all 0.2s ease;
+    width: 30px;
+    height: 30px;
+    display: block;
+    top: 281px;
+    left: 180px;
+    position: absolute;
 }
 
 .gg-title {
     text-transform: uppercase;
     text-shadow: 0 -1px 2px rgba(255,255,255,0.8), 0 1px 2px rgba(0,0,0,0.5), 0 -1px 1px white;
-    font-size: 40px;
+    font-size: 36px;
+    margin-left: 20px;
+    font-family: 'Bungee Outline', cursive;
+    line-height: 36px;
+    color: DarkOrchid;
+    text-emphasis-color: #048d8f;
+    top: 195px;
+    left: 10px;
+    position: absolute;
+}
+
+.gg-title-small {
+    text-transform: lowercase;
+    text-shadow: 0 -1px 2px rgba(255,255,255,0.8), 0 1px 2px rgba(0,0,0,0.5), 0 -1px 1px white;
+    font-size: 18px;
     text-align: left;
-    margin-left: 30px;
-    font-family: 'Modak', cursive;
-    line-height: 20px;
+    margin-left: 1px;
+    font-family: 'Vibur', cursive;
+    line-height: 18px;
     color: DarkOrchid;
     text-emphasis-color: #048d8f;
 }
