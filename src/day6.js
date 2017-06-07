@@ -10,16 +10,52 @@ class GameGal extends Component {
         this.state = {
             grid: new Array(WIDTH * HEIGHT).fill('☆'),
             foods: 0,
+            player_position: 10,
         }
+        this.onButtonClick = this.onButtonClick.bind(this);
 
-        this.state.grid[10] = "😺";
+        this.state.grid[this.state.player_position] = "😺";
         this.state.grid[27] = "🍟";
         this.state.grid[33] = "🍦";
         this.state.grid[5] = "🍭";
         this.state.grid[49] = "🍕";
-        this.state.grid[12] = "🍒"; 
+        this.state.grid[12] = "🍒";
     }
 
+    onButtonClick (direction) {
+        var grid = this.state.grid;
+        var player_position = this.state.player_position;
+
+        switch (direction) {
+            case "up":
+                grid[player_position] = '☆';
+                player_position = player_position - WIDTH;
+                grid[player_position] = "😺";
+                break;
+            case "down":
+                grid[player_position] = '☆';
+                player_position = player_position + WIDTH;
+                grid[player_position] = "😺";
+                break;
+            case "left":
+                grid[player_position] = '☆';
+                player_position = player_position - 1;
+                grid[player_position] = "😺";
+                break;
+            case "right":
+                grid[player_position] = '☆';
+                player_position = player_position + 1;
+                grid[player_position] = "😺";
+                break;
+        }
+
+
+
+        this.setState({
+            grid: grid,
+            player_position: player_position,
+        });
+    }
 
     renderGrid () {
         var rows = [];
@@ -69,14 +105,14 @@ class GameGal extends Component {
                             by piri
                         </div>
                     </div>
-                    <div className="gg-button-up">
+                    <div className="gg-button-up" onClick={e => this.onButtonClick("up")}>
 
                     </div>
-                    <div className="gg-button-left">
+                    <div className="gg-button-left" onClick={e => this.onButtonClick("left")}>
                     </div>
-                    <div className="gg-button-right">
+                    <div className="gg-button-right" onClick={e => this.onButtonClick("right")}>
                     </div>
-                    <div className="gg-button-down">
+                    <div className="gg-button-down" onClick={e => this.onButtonClick("down")}>
                     </div>
 
                     <div className="gg-speakers">
