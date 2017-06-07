@@ -9,8 +9,17 @@ class GameGal extends Component {
                 <section className="gamegal">
                     <div className="gg-screen">
                         <div className="gg-screen-text">
-
+                            <div>
+                                <div>Life: 💖💖💖</div>
+                                <div>☆                 .    ✧?</div>
+                                <div>     ^,,,,✿, </div>
+                                <div>      *:･ﾟ✧)*:･ﾟ✧ </div>
+                                <div>    (###,,--,,##)</div>
+                                <div>      (###,, , , ,,##)</div>
+                                <div>      ✿..(, 👻, ,(,,) ,,)~~~~!!!!</div>
+                                <div>   </div>
                             </div>
+                        </div>
                     </div>
                     <div className="gg-title">
                         <div>gamegal</div>
