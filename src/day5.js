@@ -3,12 +3,11 @@ import './day5.css'
 
 class Five extends Component {
     constructor (props) {
-        super(props); {
+        super(props);
             this.state = {
                 mood: 0,
             }
             this.onButtonClick = this.onButtonClick.bind(this);
-        }
     }
 
     onButtonClick () {
@@ -120,7 +119,7 @@ class Five extends Component {
                 </div>
             )
             break;
-
+            default:
             case 6:
             screen = (
                 <div>

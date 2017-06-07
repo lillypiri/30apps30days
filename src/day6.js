@@ -7,46 +7,68 @@ const HEIGHT = 5;
 class GameGal extends Component {
     constructor (props) {
         super(props);
+
+        var grid = new Array(WIDTH * HEIGHT).fill('☆');
+
+        grid[10] = "😺";
+        grid[27] = "🍟";
+        grid[33] = "🍦";
+        grid[5] = "🍭";
+        grid[49] = "🍕";
+        grid[12] = "🍒";
+
         this.state = {
-            grid: new Array(WIDTH * HEIGHT).fill('☆'),
+            grid: grid,
             foods: 0,
             player_position: 10,
         }
         this.onButtonClick = this.onButtonClick.bind(this);
 
-        this.state.grid[this.state.player_position] = "😺";
-        this.state.grid[27] = "🍟";
-        this.state.grid[33] = "🍦";
-        this.state.grid[5] = "🍭";
-        this.state.grid[49] = "🍕";
-        this.state.grid[12] = "🍒";
     }
 
     onButtonClick (direction) {
         var grid = this.state.grid;
         var player_position = this.state.player_position;
+        var foods = this.state.foods;
 
         switch (direction) {
             case "up":
+                if (player_position < WIDTH) return;
                 grid[player_position] = '☆';
                 player_position = player_position - WIDTH;
+                if (grid[player_position] !== "☆") {
+                    foods ++;
+                }
                 grid[player_position] = "😺";
                 break;
             case "down":
+                if (player_position > HEIGHT * (WIDTH -3)) return;
                 grid[player_position] = '☆';
                 player_position = player_position + WIDTH;
+                if (grid[player_position] !== "☆") {
+                    foods ++;
+                }
                 grid[player_position] = "😺";
                 break;
             case "left":
+                if (player_position === 0) return;
                 grid[player_position] = '☆';
                 player_position = player_position - 1;
+                if (grid[player_position] !== "☆") {
+                    foods ++;
+                }
                 grid[player_position] = "😺";
                 break;
             case "right":
+            if (player_position === WIDTH * HEIGHT -1) return;
                 grid[player_position] = '☆';
                 player_position = player_position + 1;
+                if (grid[player_position] !== "☆") {
+                    foods ++;
+                }
                 grid[player_position] = "😺";
                 break;
+            default:
         }
 
 
@@ -54,6 +76,7 @@ class GameGal extends Component {
         this.setState({
             grid: grid,
             player_position: player_position,
+            foods: foods
         });
     }
 
@@ -89,7 +112,7 @@ class GameGal extends Component {
                     <div className="gg-screen">
                         <div className="gg-screen-text">
                             <div>
-                                <div>🍽 foods:</div>
+                                <div>🍽 foods: {this.state.foods}</div>
                                 {this.renderGrid()}
                             </div>
                         </div>
