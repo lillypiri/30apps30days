@@ -16,20 +16,29 @@ class Painting extends Component {
     render () {
         return (
             <div>
-                <div className="painting">
-                    <div className="frame">
                         {!this.state.isOut &&
-                            <img src={painting} alt="painting" />
+                            <div className="painting">
+                                <div className="frame">
+                                    <img src={painting} alt="painting" />
+                                </div>
+
+                                <div className="plaque bronze" onClick={e => this.setState({ isOut: true })}>
+                                        Make a wish!
+                                </div>
+                            </div>
                         }
                         {this.state.isOut &&
-                            <img src={out} alt="out" />
-                        }
-                    </div>
-                </div>
+                            <div className="painting">
+                                <div className="frame">
+                                    <img src={out} alt="out" />
+                                </div>
+                                <div className="plaque bronze" onClick={e => this.setState({ isOut: false })}>
+                                        Another?
+                                </div>
+                            </div>
 
-                <div className="plaque bronze" onClick={e => this.setState({ isOut: true })}>
-                    make a wish
-                </div>
+                        }
+
 
                 <img src={out} alt="out" style={{ display: "none" }}/>
 
