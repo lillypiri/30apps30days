@@ -1,0 +1,7 @@
+.painting {
+    margin: auto;
+    width: 500px;
+}
+.painting img {
+    max-width: 100%;
+}

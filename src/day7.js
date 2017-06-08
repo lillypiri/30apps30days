@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
+import painting from './images/piri_painting.jpg';
 import './day7.css'
 
 
-class Dragon extends Component {
+class Painting extends Component {
     render () {
         return (
             <div>
-                day 7
+                <div className="painting">
+                    <img src={painting} alt="painting" />
+                </div>
             </div>
         )
 
     }
 }
 
-export default Dragon;
+export default Painting;
