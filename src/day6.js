@@ -51,7 +51,7 @@ class GameGal extends Component {
                 grid[player_position] = "😺";
                 break;
             case "down":
-                if (player_position > (HEIGHT -1) * WIDTH) return;
+                if (player_position >= (HEIGHT -1) * WIDTH) return;
                 grid[player_position] = '☆';
                 player_position = player_position + WIDTH;
                 if (grid[player_position] !== "☆") {
