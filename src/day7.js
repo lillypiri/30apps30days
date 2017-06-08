@@ -31,6 +31,8 @@ class Painting extends Component {
                     make a wish
                 </div>
 
+                <img src={out} alt="out" style={{ display: "none" }}/>
+
                 <div className="footer">
                     Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
                     <div>
