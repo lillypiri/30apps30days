@@ -27,6 +27,7 @@
     border-radius: 2px;
     z-index: 500;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 40px;
 }
 
 .plaque:after{
