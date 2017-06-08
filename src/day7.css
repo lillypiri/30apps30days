@@ -4,6 +4,12 @@
     margin-top: 40px;
     margin-bottom: 50px;
 }
+@media only screen and (max-width: 500px){
+    .painting {
+        width: 285px;
+    }
+}
+
 .painting img {
     max-width: 100%;
     border:solid 2px;
@@ -28,6 +34,7 @@
     z-index: 500;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
     margin-top: 40px;
+    border: inset Goldenrod 1px;
 }
 
 .plaque:after{
