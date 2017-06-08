@@ -1,7 +1,102 @@
 .painting {
     margin: auto;
     width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .painting img {
     max-width: 100%;
+    border:solid 2px;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
 }
+
+.plaque {
+    font-family: 'Playfair Display', serif;
+    color: Black;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    content: "";
+    position: relative;
+    margin: auto;
+    top: 6px;
+    border-radius: 2px;
+    z-index: 500;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.plaque:after{
+      content: "";
+      display: block;
+      top: 4px;
+      left: 4px;
+      position: absolute;
+      border-radius: 2px;
+      z-index: 600;
+  }
+
+  .plaque:before{
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 2px;
+      z-index: 500;
+  }
+
+.bronze{
+  background: linear-gradient(45deg,  rgba(223,182,103,1) 0%,rgba(249,243,232,1) 56%,rgba(231,192,116,1) 96%);
+  padding: 10px;
+  }
+
+.bronze:before{
+  background: linear-gradient(135deg,  #d19c35 0%,#f7e6c5 50%,#e8b558 100%);
+  border: 1px solid #e6b86a;
+  }
+
+.bronze:after{
+  background: linear-gradient(45deg,  rgba(223,182,103,1) 0%,rgba(249,243,232,1) 56%,rgba(231,192,116,1) 96%);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(209,156,53,0.3);
+  border-right: 1px solid rgba(209,156,53,0.5);
+  box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, .05);
+  }
+
+.frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  padding:8vmin;
+  position:relative;
+  text-align:center;}
+ .frame:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  .frame:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
