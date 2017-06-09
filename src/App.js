@@ -7,12 +7,13 @@ import Day4 from './day4';
 import Day5 from './day5';
 import Day6 from './day6';
 import Day7 from './day7';
+import Day8 from './day8';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            current_app: 6
+            current_app: 7
         }
     }
     render() {
@@ -39,6 +40,9 @@ class App extends Component {
                 break;
             case 6:
                 day = (<Day7 />)
+                break;
+            case 7:
+                day = (<Day8 />)
                 break;
             default:
 
@@ -67,6 +71,9 @@ class App extends Component {
                     </div>
                     <div className="app-button" onClick={e => this.setState ({ current_app: 6})} >
                         7
+                    </div>
+                    <div className="app-button" onClick={e => this.setState ({ current_app: 7})}>
+                        8
                     </div>
                 </div>
                 {day}

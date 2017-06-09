@@ -74,3 +74,7 @@ Wish me luck! 🍀
 ### Day 7: Moving Picture
 - Frame CSS by [Chris Smith](https://codepen.io/chris22smith/pen/PbBwjp)
 - Bronze styling for the plaque by [Alex Bezuska](https://codepen.io/AlexBezuska/pen/zyiCs)
+<br />
+<br />
+
+### Day 8:
