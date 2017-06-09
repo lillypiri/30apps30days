@@ -36,7 +36,16 @@ class Eight extends Component {
                         <img src={wolf} alt="wolf" />
                     </div>
                 }
+                <br />
+                <br />
+                <div className="footer">
+                    Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
+                    <div>
+                        Artwork by <a href="https://lillypiri.com">Lilly Piri</a>.
+                    </div>
+                </div>
             </div>
+
         )
     }
 }
