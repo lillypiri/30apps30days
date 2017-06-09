@@ -77,4 +77,6 @@ Wish me luck! 🍀
 <br />
 <br />
 
-### Day 8:
+### Day 8: Werewolf
+- Used Interval
+- Moon spinner idea from [@ddrscott](https://gist.github.com/ddrscott/5339084)

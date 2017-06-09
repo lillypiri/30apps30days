@@ -25,6 +25,17 @@ class Eight extends Component {
                 <div className="emoji-text">
                     {moonphases[this.state.currentFrame]}
                 </div>
+
+                {this.state.currentFrame !== 4 &&
+                    <div className="emoji-text">
+                        👨‍🌾
+                    </div>
+                }
+                {this.state.currentFrame === 4 &&
+                    <div className="emoji-text">
+                        <img src={wolf} alt="wolf" />
+                    </div>
+                }
             </div>
         )
     }
