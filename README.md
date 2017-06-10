@@ -80,3 +80,6 @@ Wish me luck! 🍀
 ### Day 8: Werewolf
 - Used Interval
 - Moon spinner idea from [@ddrscott](https://gist.github.com/ddrscott/5339084)
+
+### Day 9:
+- Created form using React's [Controlled Components](https://facebook.github.io/react/docs/forms.html).
