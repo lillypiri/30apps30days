@@ -23,12 +23,16 @@ class Eight extends Component {
         return (
             <div>
                 <div className="emoji-text">
-                    {moonphases[this.state.currentFrame]}
+                    <span role="img" aria-label="moon phases emojis">
+                        {moonphases[this.state.currentFrame]}
+                    </span>
                 </div>
 
                 {this.state.currentFrame !== 4 &&
                     <div className="emoji-text">
-                        👨‍🌾
+                        <span role="img" aria-label="farmer emoji">
+                            👨‍🌾
+                        </span>
                     </div>
                 }
                 {this.state.currentFrame === 4 &&

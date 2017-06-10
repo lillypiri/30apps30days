@@ -15,8 +15,8 @@ class Nine extends Component {
     }
 
     handleSubmit(event) {
-        alert('Your horrorscope for ' + this.state.value + ' is: Watch out for raining ice cream!');
         event.preventDefault();
+        alert('Your horrorscope for ' + this.state.value + ' is: Watch out for raining ice cream!');
     }
     render() {
         return (
