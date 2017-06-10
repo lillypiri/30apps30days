@@ -19,8 +19,8 @@
         border-radius: 0;
         cursor: pointer;
         margin-right: 5px;
-        font-family: 'Roboto';
-        font-size: 14px;
+        font-family: 'VT323', monospace;
+        font-size: 20px;
         line-height: 40px;
         border-bottom: 2px solid #ccc;
         transition: all .2s ease-out;
