@@ -70,8 +70,11 @@ class Nine extends Component {
                 <div className="form-nine">
                     <form onSubmit={this.handleSubmit}>
                         <label>
-                            <div>
+                            <div className="title">
                                 Tomorrow, you'll wake up, do a bunch of stuff, and then go back to sleep, but what will the stuff be? Let's find out:
+                            </div>
+                            <div className="emoji-ball">
+                                <span role="img" aria-label="crystal ball emoji">🔮</span>
                             </div>
                                 <div>
                                     <select className="dropdown" value={this.state.value} onChange={this.handleChange}>
@@ -100,9 +103,6 @@ class Nine extends Component {
                 </div>
                 <div className="footer">
                     Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
-                    <div>
-                        Artwork by <a href="https://lillypiri.com">Lilly Piri</a>.
-                    </div>
                 </div>
             </div>
         );

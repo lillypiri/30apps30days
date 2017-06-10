@@ -92,17 +92,18 @@ class GameGal extends Component {
     renderGrid () {
         var rows = [];
 
+        const renderCell = (cell, x) => {
+            return (
+                <div className="cell" key={x}>
+                    {this.state.grid[(y * WIDTH) + x]}
+                </div>
+            );
+        }
+
         for (var y = 0; y < HEIGHT; y++) {
             rows.push(
                 <div className="row" key={y}>
-                    {this.state.grid.slice(y * WIDTH, (y * WIDTH) + WIDTH).map((cell, x) => {
-
-                        return (
-                            <div className="cell" key={x}>
-                                {this.state.grid[(y * WIDTH) + x]}
-                            </div>
-                        );
-                    })}
+                    {this.state.grid.slice(y * WIDTH, (y * WIDTH) + WIDTH).map(renderCell)}
                 </div>
             )
         }

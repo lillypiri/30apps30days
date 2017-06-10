@@ -11,11 +11,17 @@
     padding: 10px;
 }
 
+.emoji-ball {
+    font-size: 150px;
+    text-align: center;
+    min-height: 200px;
+}
+
 .dropdown {
         -webkit-appearance: none;
         border: none;
         outline: none;
-        height: 40;
+        height: 40px;
         background: none;
         background: url(./images/carat.png) no-repeat 100%;
         background-size: 14px 7px;
