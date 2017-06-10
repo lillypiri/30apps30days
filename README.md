@@ -63,7 +63,7 @@ Wish me luck! 🍀
 <br/>
 <br/>
 
-### Day 6: Game Gal - mini food collecting game.
+### Day 6: Game Gal - mini food collecting game. 🎮
 - Used switch case for player direction.
 - Created a grid.
 
@@ -71,16 +71,16 @@ Wish me luck! 🍀
 <br />
 <br />
 
-### Day 7: Moving Picture
+### Day 7: Moving Picture 🖼️
 - Frame CSS by [Chris Smith](https://codepen.io/chris22smith/pen/PbBwjp)
 - Bronze styling for the plaque by [Alex Bezuska](https://codepen.io/AlexBezuska/pen/zyiCs)
 <br />
 <br />
 
-### Day 8: Werewolf
+### Day 8: Werewolf 🐺
 - Used Interval
 - Moon spinner idea from [@ddrscott](https://gist.github.com/ddrscott/5339084)
 
-### Day 9: Fortune
+### Day 9: Fortune 🔮
 - Created form using React's [Controlled Components](https://facebook.github.io/react/docs/forms.html).
 - Uses a switch case for fortunes.
