@@ -55,33 +55,13 @@ class App extends Component {
             <div>
                 <div className="app-switcher">
                     Pick a day:
-                    <div className="app-button" onClick={e => this.setState({ current_app: 0 })} >
-                        1
-                    </div>
-                    <div className="app-button" onClick={e => this.setState({ current_app: 1 })} >
-                        2
-                    </div>
-                    <div className="app-button" onClick={e => this.setState({ current_app: 2 })} >
-                        3
-                    </div>
-                    <div className="app-button" onClick={e => this.setState({ current_app: 3 })} >
-                        4
-                    </div>
-                    <div className="app-button" onClick={e => this.setState({ current_app: 4 })} >
-                        5
-                    </div>
-                    <div className="app-button" onClick={e => this.setState ({ current_app: 5})} >
-                        6
-                    </div>
-                    <div className="app-button" onClick={e => this.setState ({ current_app: 6})} >
-                        7
-                    </div>
-                    <div className="app-button" onClick={e => this.setState ({ current_app: 7})}>
-                        8
-                    </div>
-                    <div className="app-button" onClick={e => this.setState ({ current_app: 8})}>
-                        9
-                    </div>
+                    {[0,1,2,3,4,5,6,7,8].map(number => {
+                        return (
+                            <div className={`app-button ${this.state.current_app === number ? "active-app" : "" }`} onClick={e => this.setState({ current_app: number })} >
+                                {number +1}
+                            </div>
+                        )
+                    })}
                 </div>
                 {day}
             </div>
