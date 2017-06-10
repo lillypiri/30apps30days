@@ -6,6 +6,9 @@
 .result {
     text-align: center;
     margin: auto;
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding: 10px;
 }
 
 .dropdown {
