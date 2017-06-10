@@ -71,7 +71,7 @@ class Nine extends Component {
                     <form onSubmit={this.handleSubmit}>
                         <label>
                             <div>
-                                Choose your star sign:
+                                Tomorrow, you'll wake up, do a bunch of stuff, and then go back to sleep, but what will the stuff be? Let's find out:
                             </div>
                                 <div>
                                     <select className="dropdown" value={this.state.value} onChange={this.handleChange}>
@@ -95,7 +95,7 @@ class Nine extends Component {
                 </div>
                 <div className="result">
                     {this.state.value !== '' &&
-                         this.state.value + ': ' + this.state.fortune
+                        this.state.fortune
                     }
                 </div>
                 <div className="footer">
