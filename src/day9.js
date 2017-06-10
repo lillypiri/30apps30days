@@ -95,7 +95,7 @@ class Nine extends Component {
                 </div>
                 <div className="result">
                     {this.state.value !== '' &&
-                        'Your fortune for ' + this.state.value + ' is: ' + this.state.fortune
+                         this.state.value + ': ' + this.state.fortune
                     }
                 </div>
                 <div className="footer">
