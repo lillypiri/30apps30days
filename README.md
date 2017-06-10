@@ -81,5 +81,6 @@ Wish me luck! 🍀
 - Used Interval
 - Moon spinner idea from [@ddrscott](https://gist.github.com/ddrscott/5339084)
 
-### Day 9:
+### Day 9: Fortune
 - Created form using React's [Controlled Components](https://facebook.github.io/react/docs/forms.html).
+- Uses a switch case for fortunes.
