@@ -7,3 +7,22 @@
     text-align: center;
     margin: auto;
 }
+
+.dropdown {
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+        height: 40;
+        background: none;
+        background: url(./images/carat.png) no-repeat 100%;
+        background-size: 14px 7px;
+        border-radius: 0;
+        cursor: pointer;
+        margin-right: 5px;
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 40px;
+        border-bottom: 2px solid #ccc;
+        transition: all .2s ease-out;
+        padding-right: 20px;
+    }

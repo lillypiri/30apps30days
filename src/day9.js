@@ -28,13 +28,15 @@ class Nine extends Component {
                             <div>
                                 Choose your star sign:
                             </div>
-                            <select value={this.state.value} onChange={this.handleChange}>
-                                <option value="">Choose one</option>
-                                <option value="Pisces">Pisces</option>
-                                <option value="Aries">Aries</option>
-                                <option value="Scorpio">Scorpio</option>
-                                <option value="Gemini">Gemini</option>
-                            </select>
+                                <div>
+                                    <select className="dropdown" value={this.state.value} onChange={this.handleChange}>
+                                        <option value="">Choose one</option>
+                                        <option value="Pisces">Pisces</option>
+                                        <option value="Aries">Aries</option>
+                                        <option value="Scorpio">Scorpio</option>
+                                        <option value="Gemini">Gemini</option>
+                                    </select>
+                                </div>
                         </label>
                     </form>
                 </div>
