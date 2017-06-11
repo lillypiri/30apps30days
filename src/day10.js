@@ -7,7 +7,8 @@ class EightBall extends Component {
     constructor(props) {
         super (props);
         this.state = {
-            answer: 0
+            answer: 0,
+            isShake: false
         }
         this.onClick = this.onClick.bind(this);
     }
@@ -19,20 +20,32 @@ class EightBall extends Component {
             newanswer = Math.floor(Math.random()*19)
         }
         this.setState ({
-            answer: newanswer
+            answer: newanswer,
+            isShake: !this.state.isShake
         });
     }
 
     render () {
         return(
             <div>
-                <div className="eightball up-down" onClick={e => this.onClick()}>
-                    <div className="eightball-inner-circle">
-                        <div className="eightball-text">
-                            {answer[this.state.answer]}
+                {!this.state.isShake &&
+                    <div className="eightball up-down" onClick={e => this.onClick()}>
+                        <div className="eightball-inner-circle">
+                            <div className="eightball-text">
+                                8
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
+                {this.state.isShake &&
+                    <div className="eightball up-down" onClick={e => this.onClick()}>
+                        <div className="eightball-inner-blue">
+                            <div className="answers">
+                                {answer[this.state.answer]}
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         )
 

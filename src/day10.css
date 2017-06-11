@@ -26,6 +26,16 @@
     text-align: center;
 }
 
+.eightball-inner-blue {
+    display: block;
+    width: 120px;
+    margin: auto;
+    background-color: #0d2142;
+    border-radius: 50%;
+    height: 120px;
+    text-align: center;
+}
+
 .eightball-text {
     -ms-transform: rotate(-20deg); /* IE 9 */
     -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
@@ -41,4 +51,14 @@
     animation-name: up-down;
     animation-duration: 0.2s;
     animation-iteration-count: 3;
+}
+
+.answers {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
 }
