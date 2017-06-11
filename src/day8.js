@@ -13,12 +13,17 @@ class Eight extends Component {
     }
 
     componentDidMount () {
-        setInterval(function () {
+        this.intervalId = setInterval(function () {
             this.setState ({
                 currentFrame: (this.state.currentFrame + 1) % moonphases.length
             });
         }.bind(this), 200)
     }
+
+    componentWillUnmount () {
+        clearInterval(this.intervalId);
+    }
+    
     render() {
         return (
             <div>
