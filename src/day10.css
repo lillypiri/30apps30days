@@ -1,0 +1,44 @@
+.eightball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    background-color: #fb6565;
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 40px;
+    box-shadow: 15px 15px 10px DarkGrey, inset -25px -25px 40px rgba(150,0,3,.5);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    animation-name: up-down;
+}
+
+.eightball-inner-circle {
+    display: block;
+    width: 120px;
+    margin: auto;
+    background-color: CornSilk;
+    border-radius: 50%;
+    height: 120px;
+    text-align: center;
+}
+
+.eightball-text {
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+    font-size: 110px;
+    -webkit-filter: opacity(90%); /* Safari */
+    filter: opacity(90%);
+}
+
+.up-down {
+    margin-bottom: auto;
+    transition: all 0.2s ease;
+    animation-name: up-down;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+}
