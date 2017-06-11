@@ -14,6 +14,7 @@
     background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
     background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
     animation-name: up-down;
+    margin-bottom: 20px;
 }
 
 .eightball-inner-circle {
@@ -27,7 +28,9 @@
 }
 
 .eightball-inner-blue {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 120px;
     margin: auto;
     background-color: #0d2142;
@@ -46,7 +49,6 @@
 }
 
 .up-down {
-    margin-bottom: auto;
     transition: all 0.2s ease;
     animation-name: up-down;
     animation-duration: 0.2s;
@@ -54,11 +56,27 @@
 }
 
 .answers {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: auto;
     text-align: center;
     color: white;
-    margin-top: 40px;
+    width: 100px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    text-shadow: 0 0 0 rgba(255,255,255,1);
 }
+
+@keyframes fadein {
+    0% {
+    color: rgba(255,255,255,0);
+    text-shadow: 0 0 50px rgba(255,255,255,1);
+    }
+}
+
+@keyframes up-down {
+        0%, 100% {
+            transform: translate3d(0,0,0);
+        }
+        50% {
+            transform: translate3d(3px,10px,0);
+        }
+    }

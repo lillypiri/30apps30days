@@ -29,7 +29,7 @@ class EightBall extends Component {
         return(
             <div>
                 {!this.state.isShake &&
-                    <div className="eightball up-down" onClick={e => this.onClick()}>
+                    <div className="eightball" onClick={e => this.onClick()}>
                         <div className="eightball-inner-circle">
                             <div className="eightball-text">
                                 8
@@ -46,6 +46,10 @@ class EightBall extends Component {
                         </div>
                     </div>
                 }
+
+                <div className="footer">
+                    Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
+                </div>
             </div>
         )
 
