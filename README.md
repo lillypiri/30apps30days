@@ -82,3 +82,5 @@ I used these resources to get me started with React:
 ### Day 10: Magic 8 Ball 🎱
 - Remake of my old Ruby [Magic 8 ball](https://pink8ball.herokuapp.com/answer) app in React.
 - CSS used for the illustration.
+
+![Magic 8 Ball gif](https://media.giphy.com/media/3o7btM9ZguhZ0q3eXS/giphy.gif "Magic 8 Ball in action")
