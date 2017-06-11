@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import wolf from './images/wolf.png';
-
 import './day8.css'
+
 var moonphases = ['🌑' ,'🌒','🌓','🌔', '🌕', '🌖', '🌗', '🌘'];
 
 class Eight extends Component {
