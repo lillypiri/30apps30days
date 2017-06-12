@@ -5,12 +5,34 @@
     font-size: 40px;
     font-family: 'Pacifico', cursive;
     color: red;
-    text-shadow: 1px 1px 0 DarkGrey, inset 1px 1px 0  white;
+    text-shadow: 1px 1px 2px black, 3px 3px 5px white;
+    background: #f2cc35;
 }
 
 .eatenEggo {
     display: block;
     text-align: center;
+}
+
+.item-eggo {
+    height: 100%;
+    padding: 20px;
+    display: inline-block;
+    animation-duration: 20s;
+    animation-name: wiggle-eggo;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wiggle-eggo {
+    0% {
+        transform: rotate(-360deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 .reset-button {

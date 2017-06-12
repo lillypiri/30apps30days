@@ -65,7 +65,7 @@ class Eggo extends Component {
         return (
             <div className="eatenEggo">
                 {this.state.items.indexOf("eggo") === -1 &&
-                    <img src={eggo} className="item" alt="eggo" onClick={e => this.eatenEggo("eggo")}/>
+                    <img src={eggo} className="item-eggo" alt="eggo" onClick={e => this.eatenEggo("eggo")}/>
                 }
 
                 {this.props.isEaten &&
