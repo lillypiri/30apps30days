@@ -16,7 +16,7 @@
 
 .item-eggo {
     height: 100%;
-    padding: 20px;
+    padding: 40px;
     display: inline-block;
     animation-duration: 20s;
     animation-name: wiggle-eggo;
@@ -45,10 +45,10 @@
     padding: 10px;
     margin: 40px;
     outline: none;
-    font-family: 'VT323', monospace;
+    font-family: 'Pacifico', cursive;
     transition: all 0.2s ease-in-out;
 }
 
 .reset-button:hover {
-    background-color: mediumturquoise;
+    background-color: red;
 }
