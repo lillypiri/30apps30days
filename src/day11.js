@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import eggo from './images/eggo.gif';
+import eleven from './images/eleven.gif';
 import './day11.css'
 
 
@@ -129,21 +130,28 @@ class Eggo extends Component {
 
     render () {
         return (
-            <div className="eatenEggo">
-                <div className="eggo-wrapper">
-                    {this.state.items.map((item, index) => {
-                        if (item.isEaten) return null;
+            <div>
+                <div className="eatenEggo">
+                    {!this.state.canReset &&
+                        <div className="eggo-wrapper">
+                            {this.state.items.map((item, index) => {
+                                if (item.isEaten) return null;
 
-                        return (
-                            <img key={index} className="item-eggo" alt="eggo" src={eggo} onClick={e => this.onClick(index)} style={{ top: `${item.y}%`, left: `${item.x}%` }} />
-                        )
-                    })}
+                                return (
+                                    <img key={index} className="item-eggo" alt="eggo" src={eggo} onClick={e => this.onClick(index)} style={{ top: `${item.y}%`, left: `${item.x}%` }} />
+                                )
+                            })}
 
+                        </div>
+                    }
                 </div>
 
                 {this.state.canReset &&
                     <div>
-                        <button className="reset-button" onClick={this.reset}>Play Again!</button>
+                        <div className="reset-page">
+                            <img src={eleven} alt="eleven" />
+                            <button className="reset-button" onClick={this.reset}>Play Again!</button>
+                        </div>
                     </div>
                 }
 
