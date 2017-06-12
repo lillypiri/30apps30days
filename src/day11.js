@@ -17,7 +17,7 @@ class Day11 extends Component {
             <div>
                 {!this.state.isEaten &&
                     <div className="eggo">
-                        Leggo my Eggo!
+                        L'Eggo my Eggo!
                     </div>
                 }
                 {this.state.isEaten &&
