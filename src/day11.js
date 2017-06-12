@@ -16,7 +16,7 @@ class Day11 extends Component {
             <div>
                 {!this.state.isEaten &&
                     <div className="eggo">
-                        Eat the eggos!
+                        Leggo my Eggo!
                     </div>
                 }
                 {this.state.isEaten &&
@@ -68,9 +68,9 @@ class Eggo extends Component {
                     <img src={eggo} className="item" alt="eggo" onClick={e => this.eatenEggo("eggo")}/>
                 }
 
-                {this.props.isDone &&
+                {this.props.isEaten &&
                     <div>
-                        <button className="button" onClick={this.reset}>Play Again!</button>
+                        <button className="reset-button" onClick={this.reset}>Play Again!</button>
                     </div>
                 }
             </div>

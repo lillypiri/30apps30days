@@ -1,0 +1,32 @@
+.eggo {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    color: red;
+    text-shadow: 1px 1px 0 DarkGrey, inset 1px 1px 0  white;
+}
+
+.eatenEggo {
+    display: block;
+    text-align: center;
+}
+
+.reset-button {
+    border-radius: 10%;
+    background-color: GoldenRod;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+    outline: none;
+    font-family: 'VT323', monospace;
+    transition: all 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+    background-color: mediumturquoise;
+}
