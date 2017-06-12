@@ -38,37 +38,110 @@ class Eggo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: []
+            items: [
+                {
+                    isEaten: false,
+                    x: 40,
+                    y: 20
+                },
+                {
+                    isEaten: false,
+                    x: 20,
+                    y: 30
+                },
+                {
+                    isEaten: false,
+                    x: 60,
+                    y: 50
+                },
+                {
+                    isEaten: false,
+                    x: 100,
+                    y: 70
+                },
+                {
+                    isEaten: false,
+                    x: 120,
+                    y: 10
+                },
+                {
+                    isEaten: false,
+                    x: 125,
+                    y: 20
+                }
+            ],
+            canReset: false
         }
-        this.reset = this.reset.bind(this);
 
-        this.eatenEggo = this.eatenEggo.bind(this);
+        this.reset = this.reset.bind(this);
+        this.onClick = this.onClick.bind(this);
+    }
+
+    onClick (index) {
+        const items = this.state.items;
+
+        items[index].isEaten = true;
+
+        this.setState({
+            items,
+            canReset: items.filter(item => !item.isEaten).length === 0
+         });
     }
 
     reset () {
         this.setState({
-            items: []
+            items: [
+                {
+                    isEaten: false,
+                    x: 40,
+                    y: 20
+                },
+                {
+                    isEaten: false,
+                    x: 20,
+                    y: 30
+                },
+                {
+                    isEaten: false,
+                    x: 60,
+                    y: 50
+                },
+                {
+                    isEaten: false,
+                    x: 100,
+                    y: 70
+                },
+                {
+                    isEaten: false,
+                    x: 120,
+                    y: 10
+                },
+                {
+                    isEaten: false,
+                    x: 125,
+                    y: 20
+                }
+            ],
+            canReset: false
         })
         this.props.onEaten(false);
-    }
-
-    eatenEggo(item) {
-        if (this.state.items.length === 0) {
-            this.props.onEaten(true);
-        }
-        this.setState(prevState => ({
-            items: prevState.items.concat(item)
-        }));
     }
 
     render () {
         return (
             <div className="eatenEggo">
-                {this.state.items.indexOf("eggo") === -1 &&
-                    <img src={eggo} className="item-eggo" alt="eggo" onClick={e => this.eatenEggo("eggo")}/>
-                }
+                <div className="eggo-wrapper">
+                    {this.state.items.map((item, index) => {
+                        if (item.isEaten) return null;
 
-                {this.props.isEaten &&
+                        return (
+                            <img key={index} className="item-eggo" alt="eggo" src={eggo} onClick={e => this.onClick(index)} style={{ top: `${item.y}%`, left: `${item.x}%` }} />
+                        )
+                    })}
+
+                </div>
+
+                {this.state.canReset &&
                     <div>
                         <button className="reset-button" onClick={this.reset}>Play Again!</button>
                     </div>

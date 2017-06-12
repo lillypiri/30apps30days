@@ -15,12 +15,18 @@
 }
 
 .item-eggo {
-    height: 100%;
     padding: 40px;
-    display: inline-block;
+    display: block;
     animation-duration: 20s;
     animation-name: wiggle-eggo;
     animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.eggo-wrapper {
+    height: 400px;
+    width: 50%;
+    position: relative;
 }
 
 @keyframes wiggle-eggo {
