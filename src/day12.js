@@ -54,11 +54,24 @@ class Kiki extends Component {
         this.x += this.vx;
         this.y += this.vy;
 
-        if (this.y + this.vy > this.canvas.height || this.y + this.vy < 0) {
+        if (this.y + this.vy > this.canvas.height) {
             this.vy = -this.vy;
+            this.y = this.canvas.height;
         }
-        if (this.x + this.vx > this.canvas.width || this.x + this.vx < 0) {
+
+        if (this.y + this.vy < 0) {
+            this.vy = -this.vy;
+            this.y = 0;
+        }
+
+        if (this.x + this.vx > this.canvas.width) {
             this.vx = -this.vx;
+            this.x = this.canvas.width;
+        }
+
+        if (this.x + this.vx < 0) {
+            this.vx = -this.vx;
+            this.x = 0;
         }
 
         window.requestAnimationFrame(this.draw);
