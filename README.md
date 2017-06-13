@@ -84,3 +84,16 @@ I used these resources to get me started with React:
 - CSS used for the illustration.
 
 ![Magic 8 Ball gif](https://media.giphy.com/media/3o7btM9ZguhZ0q3eXS/giphy.gif "Magic 8 Ball in action")
+
+
+### Day 11: L'eggo my Eggo!
+- Slightly more complex React states
+- Continuous animations
+
+
+### Day 12: Kiki 🎃
+- Using Canvas to render a background and moon shape.
+- Using Canvas to make Kiki fly around.
+- Utilising requestAnimationFrame
+
+![Kiki app gif](https://media.giphy.com/media/xUPGcjiqSRTxE9iKY0/giphy.gif "Kiki app in action")
