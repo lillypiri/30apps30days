@@ -99,5 +99,5 @@ I used these resources to get me started with React:
 ![Kiki app gif](https://media.giphy.com/media/xUPGcjiqSRTxE9iKY0/giphy.gif "Kiki app in action")
 
 
-### Day 12: APOD API ✨
+### Day 13: APOD API ✨
 - Used `fetch` to consume [Nasa APIs](https://api.nasa.gov/).
