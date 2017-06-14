@@ -1,0 +1,12 @@
+.apod {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.apod img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
