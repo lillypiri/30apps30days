@@ -13,12 +13,13 @@ import Day10 from './day10';
 import Day11 from './day11';
 import Day12 from './day12';
 import Day13 from './day13';
+import Day14 from './day14';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            current_app: 12
+            current_app: 13
         }
     }
     render() {
@@ -64,6 +65,9 @@ class App extends Component {
             case 12:
                 day = (<Day13 />)
                 break;
+            case 13:
+                day = (<Day14 />)
+                break;
             default:
 
         }
@@ -71,7 +75,7 @@ class App extends Component {
             <div>
                 <div className="app-switcher">
                     Pick a day:
-                    {[0,1,2,3,4,5,6,7,8,9,10,11,12].map(number => {
+                    {[0,1,2,3,4,5,6,7,8,9,10,11,12,13].map(number => {
                         return (
                             <div key={number} className={`app-button ${this.state.current_app === number ? "active-app" : "" }`} onClick={e => this.setState({ current_app: number })} >
                                 {number +1}

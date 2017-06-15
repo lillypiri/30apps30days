@@ -101,3 +101,8 @@ I used these resources to get me started with React:
 
 ### Day 13: APOD API ✨
 - Used `fetch` to consume [Nasa APIs](https://api.nasa.gov/).
+
+
+### Day 14: Giphy API
+- Used 'fetch' to consume the [Giphy API](https://github.com/Giphy/GiphyAPI).
+- Uses parameters to limit the gifs and rating.
