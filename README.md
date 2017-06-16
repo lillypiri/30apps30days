@@ -106,3 +106,7 @@ I used these resources to get me started with React:
 ### Day 14: Giphy API
 - Used 'fetch' to consume the [Giphy API](https://github.com/Giphy/GiphyAPI).
 - Uses parameters to limit the gifs and rating.
+
+
+### Day 15:
+-
