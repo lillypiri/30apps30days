@@ -23,7 +23,7 @@ class Mystery extends Component {
             return;
         }
 
-        fetch(`http://api.giphy.com/v1/gifs/search?q=${encodeURIComponent(this.state.query)}&limit=1&rating=g&api_key=dc6zaTOxFJmzC`).then(function(response) {
+        fetch(`https://api.giphy.com/v1/gifs/search?q=${encodeURIComponent(this.state.query)}&limit=1&rating=g&api_key=dc6zaTOxFJmzC`).then(function(response) {
             if (response.status >= 400) {
                 throw new Error("Bad response from server");
             }
