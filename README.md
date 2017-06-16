@@ -108,5 +108,8 @@ I used these resources to get me started with React:
 - Uses parameters to limit the gifs and rating.
 
 
-### Day 15:
--
+### Day 15: Giphy Search
+- Testing controlled components.
+- Using fetch to return the top gif for a search query.
+
+![Giphy Search gif](https://media.giphy.com/media/3o7btXFJQN7WwfaV68/giphy.gif "Search in action").
