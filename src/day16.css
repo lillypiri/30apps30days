@@ -1,0 +1,11 @@
+.stars {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Monofett', cursive;
+    font-size: 30px;
+}
+
+.starrynight {
+    cursor:grab;
+}

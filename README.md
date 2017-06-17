@@ -104,7 +104,7 @@ I used these resources to get me started with React:
 
 
 ### Day 14: Giphy API
-- Used 'fetch' to consume the [Giphy API](https://github.com/Giphy/GiphyAPI).
+- Used `fetch` to consume the [Giphy API](https://github.com/Giphy/GiphyAPI).
 - Uses parameters to limit the gifs and rating.
 
 
@@ -113,3 +113,8 @@ I used these resources to get me started with React:
 - Using fetch to return the top gif for a search query.
 
 ![Giphy Search gif](https://media.giphy.com/media/3o7btXFJQN7WwfaV68/giphy.gif "Search in action").
+
+
+### Day 16: Starry Night
+- Used Canvas to render a background with many stars.
+- User can add stars with `onClick` handler.
