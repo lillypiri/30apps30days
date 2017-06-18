@@ -28,6 +28,12 @@ class TodoApp extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+
+    if (!this.state.text) {
+        alert("Type something in!");
+        return;
+    }
+
     var newItem = {
       text: this.state.text,
       id: Date.now()
