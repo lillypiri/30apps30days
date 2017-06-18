@@ -29,7 +29,7 @@ class TodoApp extends Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    if (!this.state.text) {
+    if (!this.state.text.trim()) {
         alert("Type something in!");
         return;
     }
