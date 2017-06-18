@@ -69,3 +69,20 @@
     transition: box-shadow 0.3s ease;
     font-family: 'Geostar Fill', cursive;
 }
+
+.delete-button {
+    background-color: DarkCyan;
+    border: none;
+    color: white;
+    padding: 0 5px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 12px;
+    border: 1px solid Brown;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    font-family: 'Geostar Fill', cursive;
+    margin-left: 20px;
+}

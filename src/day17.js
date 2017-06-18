@@ -6,6 +6,7 @@ class TodoApp extends Component {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onDelete = this.onDelete.bind(this);
     this.state = {items: [], text: ''};
   }
 
@@ -14,7 +15,7 @@ class TodoApp extends Component {
         <div>
           <div className="todolist">
             <div className="to-do-list-title">To Do List:</div>
-            <TodoList items={this.state.items} />
+            <TodoList items={this.state.items} onDelete={this.onDelete} />
             <form onSubmit={this.handleSubmit}>
               <input autoFocus className="todo-input" type="text" onChange={this.handleChange} value={this.state.text} />
               <button type="submit" className="add-todo">{'Add #' + (this.state.items.length + 1)}</button>
@@ -28,6 +29,14 @@ class TodoApp extends Component {
           </div>
         </div>
     );
+}
+
+ onDelete (id) {
+      this.setState(previous_state => {
+          return {
+              items: previous_state.items.filter(item => item.id !== id)
+          }
+      })
   }
 
   handleChange(e) {
@@ -59,7 +68,7 @@ class TodoList extends React.Component {
         <div className="todo-items">
             <ul>
                 {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}</li>
+                    <li key={item.id}>{item.text}<button className="delete-button" onClick={e => this.props.onDelete(item.id)}>x</button></li>
                 ))}
             </ul>
         </div>
