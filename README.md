@@ -112,9 +112,15 @@ I used these resources to get me started with React:
 - Testing controlled components.
 - Using fetch to return the top gif for a search query.
 
-![Giphy Search gif](https://media.giphy.com/media/3o7btXFJQN7WwfaV68/giphy.gif "Search in action").
+![Giphy Search gif](https://media.giphy.com/media/3o7btXFJQN7WwfaV68/giphy.gif "Search in action")
 
 
 ### Day 16: Starry Night
 - Used Canvas to render a background with many stars.
 - User can add stars with `onClick` handler.
+
+### Day 17: To Do List
+- Used states & forms to create a to do list.
+- Items can be deleted.
+
+![To Do list gif](https://media.giphy.com/media/3og0IL4CqZ6upOmFmU/giphy.gif "To Do list in action")
