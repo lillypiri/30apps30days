@@ -11,6 +11,13 @@
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 500px){
+    .todolist {
+        max-width: 90%;
+        width: 60%;
+    }
+}
+
 .todo-items {
     font-family: 'Homemade Apple', cursive;
 }
@@ -22,6 +29,7 @@
 .to-do-list-title {
     font-family: 'Geostar Fill', cursive;
     text-align: center;
+    font-size: 30px;
 }
 
 .todo-input {
@@ -34,6 +42,12 @@
     margin-right: 5px;
     outline: none;
     transition: box-shadow 0.3s ease;
+}
+
+@media only screen and (max-width: 500px){
+    .todo-input {
+        width: 70%;
+    }
 }
 
 .todo-input:focus {
