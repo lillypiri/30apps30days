@@ -5,7 +5,15 @@ class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = {secondsElapsed: 10};
+    this.reset = this.reset.bind(this);
   }
+
+  reset () {
+      this.setState({
+          secondsElapsed: 10
+      })
+  }
+
 
   tick() {
     this.setState((prevState) => ({
@@ -35,8 +43,8 @@ class Timer extends Component {
             }
           </div>
           <div>
-              {this.state.secondsElapsed <= -5 &&
-                  <button>"Countdown again"</button>
+              {this.state.secondsElapsed <= -3 &&
+                  <button onClick={this.reset}>"Countdown again"</button>
               }
           </div>
       </div>
