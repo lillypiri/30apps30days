@@ -39,12 +39,12 @@ class Timer extends Component {
          </div>
           <div>
              {this.state.secondsElapsed <= 0 &&
-                 "YAY"
+                 <img src="https://media.giphy.com/media/3orifj4cjt0VdXlJHW/giphy.gif" alt="ralph gif"/>
             }
           </div>
           <div>
               {this.state.secondsElapsed <= -3 &&
-                  <button onClick={this.reset}>"Countdown again"</button>
+                  <button onClick={this.reset}>Countdown again</button>
               }
           </div>
       </div>
