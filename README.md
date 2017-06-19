@@ -124,3 +124,7 @@ I used these resources to get me started with React:
 - Items can be deleted.
 
 ![To Do list gif](https://media.giphy.com/media/3og0IL4CqZ6upOmFmU/giphy.gif "To Do list in action")
+
+### Day 18: countdown
+- Used states to create a countdown.
+- Can be reset.
