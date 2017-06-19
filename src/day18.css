@@ -1,0 +1,45 @@
+.countdown {
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+    text-shadow: 1px 1px 2px #00CED1, 0 0 25px lightcoral, 0 0 5px lightcoral;
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.countdown img {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+@media only screen and (max-width: 500px){
+    .countdown img {
+        max-width: 90%;
+        width: 60%;
+    }
+}
+
+.countdown-button {
+    display: block;
+    margin: auto;
+    background-color: DarkTurquoise;
+    border: none;
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid Brown;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    font-family: 'Geostar Fill', cursive;
+    width: 75px;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px #00CED1, 0 0 25px lightcoral, 0 0 5px lightcoral;
+}
