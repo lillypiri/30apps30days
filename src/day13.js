@@ -35,7 +35,7 @@ class APOD extends Component {
                     <img src={this.state.image.url} alt={this.state.image.title} />
                 }
                 {this.state.image.media_type === "video" &&
-                    <iframe src={this.state.image.url} alt={this.state.image.title} />
+                    <iframe src={this.state.image.url} alt={this.state.image.title} title={this.state.image.title} />
                 }
                 <div>
                     Data provided by <a href="https://api.nasa.gov/">Nasa API</a>.
