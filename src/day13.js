@@ -14,7 +14,7 @@ class APOD extends Component {
     }
 
     componentDidMount () {
-        fetch('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo').then(function(response) {
+        fetch('https://api.nasa.gov/planetary/apod?api_key=JluBnzEZVZKGS3fGX4HtmBXD2qHnAYaV11EfQJJX').then(function(response) {
             if (response.status >= 400) {
                 throw new Error("Bad response from server");
             }
@@ -31,7 +31,12 @@ class APOD extends Component {
 
         return (
             <div className="apod">
-                <img src={this.state.image.url} alt={this.state.image.title} />
+                {this.state.image.media_type === "image" &&
+                    <img src={this.state.image.url} alt={this.state.image.title} />
+                }
+                {this.state.image.media_type === "video" &&
+                    <iframe src={this.state.image.url} alt={this.state.image.title} />
+                }
                 <div>
                     Data provided by <a href="https://api.nasa.gov/">Nasa API</a>.
                 </div>
