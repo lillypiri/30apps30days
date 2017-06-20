@@ -125,6 +125,12 @@ I used these resources to get me started with React:
 
 ![To Do list gif](https://media.giphy.com/media/3og0IL4CqZ6upOmFmU/giphy.gif "To Do list in action")
 
-### Day 18: countdown
+### Day 18: Countdown
 - Used states to create a countdown.
 - Can be reset.
+
+
+### Day 19: Cats - Studio Ghibli API
+- Used fetch to retrieve API data.
+- Used `Promise.all` to retrieve multiple things at once.
+- Used loading spinner from npm.

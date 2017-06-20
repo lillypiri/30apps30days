@@ -1,0 +1,20 @@
+.ghibli-cats {
+    display: block;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 24px;
+}
+
+.gc-title {
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+.gc-footer {
+    text-align: center;
+    padding-top: 50px;
+}

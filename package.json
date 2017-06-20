@@ -8,6 +8,7 @@
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-loading-animation": "^1.3.0",
     "react-scripts": "1.0.7",
     "serve": "^5.1.5"
   },
