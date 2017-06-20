@@ -15,7 +15,7 @@ class Gif extends Component {
 
 
     componentDidMount () {
-        fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=5&rating=g').then(function(response) {
+        fetch('https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=5&rating=g').then(function(response) {
             if (response.status >= 400) {
                 throw new Error("Bad response from server");
             }
