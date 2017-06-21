@@ -1,0 +1,42 @@
+.twenty-title {
+    text-align: center;
+    font-family: 'Codystar', cursive;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #ffeeb5;
+    padding-top: 30px;
+    color: yellow;
+    background: black;
+    padding-bottom: 20px;
+}
+
+.twenty-title-off {
+    text-align: center;
+    font-family: 'Codystar', cursive;
+    font-size: 50px;
+    padding-top: 30px;
+    color: black;
+    background: black;
+    padding-bottom: 20px;
+}
+
+.on-off-button {
+    display: block;
+    cursor: pointer;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.on-off-button img {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+@media only screen and (max-width: 500px){
+    .on-off-button img {
+        max-width: 90%;
+        width: 60%;
+    }
+}

@@ -134,3 +134,7 @@ I used these resources to get me started with React:
 - Used fetch to retrieve API data.
 - Used `Promise.all` to retrieve multiple things at once.
 - Used loading spinner from npm.
+
+
+### Day 20: Light goes on, Light goes off.
+- Used states to turn a light on and off.
