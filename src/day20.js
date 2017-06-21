@@ -36,6 +36,8 @@ class Twenty extends Component {
                     <div className="footer">
                         Images via <a href="https://frinkiac.com/">Frinkiac</a>.
                     </div>
+
+                    <img src={homeroff} className="on-off-button" alt="homer light off" style={{ display: "none" }}/>
             </div>
         )
 
