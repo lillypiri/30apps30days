@@ -23,7 +23,7 @@ class TwentyOne extends Component {
 
     componentDidMount () {
         let name = prompt("What is your name?");
-        if (name === "") {
+        if (!name) {
             name = "Mr Potter"
         }
         this.setState(prevState => {
