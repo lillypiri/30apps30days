@@ -22,7 +22,10 @@ class TwentyOne extends Component {
     // set interval to
 
     componentDidMount () {
-        const name = prompt("What is your name?");
+        let name = prompt("What is your name?");
+        if (name === "") {
+            name = "Mr Potter"
+        }
         this.setState(prevState => {
             return {
                 sentence: prevState.sentence.replace("!NAME!", name)

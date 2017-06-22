@@ -138,3 +138,7 @@ I used these resources to get me started with React:
 
 ### Day 20: Light goes on, Light goes off.
 - Used states to turn a light on and off.
+
+### Day 21: Hogwarts Letter.
+- Used `setInterval` and states to type out words one letter at a time.
+- Prompt gets user name.
