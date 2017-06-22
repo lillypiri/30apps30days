@@ -1,5 +1,6 @@
 .typed-sentence {
     font-family: 'Dawning of a New Day', cursive;
     font-size: 38px;
-    padding: 30px;
+    padding: 24px;
+    line-height: 50px;
 }
