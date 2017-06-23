@@ -1,0 +1,59 @@
+.container * {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.column {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.text-box {
+    display: block;
+    height: 100%;
+    margin: auto;
+    background: pink;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.text-box:focus {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.textarea {
+    border-radius: 2px;
+    background: Cornsilk;
+    padding: 2px;
+    width: 100%;
+    height: 50%;
+}
+
+.title-23 {
+    font-family: Megrim;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.markdown-output {
+    padding: 10px;
+}
+
+.output-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #dba7f2;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
