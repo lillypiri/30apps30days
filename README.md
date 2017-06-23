@@ -13,6 +13,7 @@ I used these resources to get me started with React:
 - [exercism](http://exercism.io/)
 - [React Documentation](https://facebook.github.io/react/)
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+- [material.io](https://material.io/)
 
 
 ** The project is hosted at [th1rty.herokuapp.com](https://th1rty.herokuapp.com/). **
@@ -142,3 +143,7 @@ I used these resources to get me started with React:
 ### Day 21: Hogwarts Letter.
 - Used `setInterval` and states to type out words one letter at a time.
 - Prompt gets user name.
+
+### Day 22: Markdown Input & Output
+- Used [remarkable npm package](https://www.npmjs.com/package/remarkable) to render Markdown.
+- Used [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to style it.
