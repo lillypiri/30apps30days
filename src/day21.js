@@ -44,6 +44,10 @@ class TwentyOne extends Component {
         }, 60)
     }
 
+    componentWillUnmount () {
+        clearInterval(this.interval);
+    }
+
     render() {
         return (
             <div className="typed-sentence">
