@@ -1,0 +1,12 @@
+.luck-images {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.magiclick {
+    cursor: pointer;
+    padding-bottom: 40px;
+    font-size: 24px;
+    color: green;
+}
