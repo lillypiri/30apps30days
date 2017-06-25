@@ -1,0 +1,16 @@
+.reactriot {
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    transition: all 0.4s ease-in-out;
+    padding-top: 30px;
+}
+.reactriot a {
+color: coral;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+.reactriot a:hover {
+color: mediumturquoise;
+text-decoration: none;
+}
