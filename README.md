@@ -120,11 +120,13 @@ I used these resources to get me started with React:
 - Used Canvas to render a background with many stars.
 - User can add stars with `onClick` handler.
 
+
 ### Day 17: To Do List
 - Used states & forms to create a to do list.
 - Items can be deleted.
 
 ![To Do list gif](https://media.giphy.com/media/3og0IL4CqZ6upOmFmU/giphy.gif "To Do list in action")
+
 
 ### Day 18: Countdown
 - Used states to create a countdown.
@@ -140,14 +142,26 @@ I used these resources to get me started with React:
 ### Day 20: Light goes on, Light goes off.
 - Used states to turn a light on and off.
 
+
 ### Day 21: Hogwarts Letter.
 - Used `setInterval` and states to type out words one letter at a time.
 - Prompt gets user name.
+
 
 ### Day 22: Markdown Input & Output
 - Used [remarkable npm package](https://www.npmjs.com/package/remarkable) to render Markdown.
 - Used [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to style it.
 
+
 ### Day 23: Clover 🍀
 - Used basic states
 - GIMP to create gif.
+
+
+### Day 24: React Riot entry: The Definitely Ending Story.
+- Spent the weekend working on [The Definitely Ending Story](https://reactriot.herokuapp.com/) for React Riot hackathon.
+- Our team created a point-n-click puzzle story book using React and original watercolour paintings.
+
+
+### Day 25: Blush
+- Used CSS to animate layers of an image.
