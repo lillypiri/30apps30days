@@ -18,3 +18,9 @@
     margin: auto;
     padding: 20px;
 }
+
+@media only screen and (max-width: 500px){
+    .fluffy, img {
+        max-width: 100%;
+    }
+}

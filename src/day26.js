@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import trapdoor from './images/trapdoor.png';
-import fluffy from './images/fluffy.png';
-import rip from './images/rip.png';
-import stone from './images/stone.png';
+import fluffy from './images/fluffy.jpg';
+import rip from './images/rip.jpg';
+import stone from './images/stone.jpg';
 import './day26.css'
 
 class Alohomora extends Component {
