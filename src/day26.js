@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+import trapdoor from './images/trapdoor.png';
+import fluffy from './images/fluffy.png';
+import rip from './images/rip.png';
+import stone from './images/stone.png';
 import './day26.css'
 
 class Alohomora extends Component {
@@ -12,11 +16,15 @@ class Alohomora extends Component {
 
     render() {
         return (
-            <div>
+            <div className="twenty-six">
                 {this.state.isFluffyDoor === 'yes' &&
                     <div>
-                        Oh SHIT, it's Fluffy. What do you want to do now?
-                        <div className="buttons">
+                        <div>
+                            <img src={fluffy} className="fluffy" alt="fluffy painting by lilly piri"/>
+                        </div>
+                        Oh !@$#, it's Fluffy. What do you want to do now?
+                        <div className="fluffy-buttons">
+
                             <button className="button" onClick={e => this.setState({ isEscaping: 'yes', isFluffyDoor: 'next' })}>FLEE</button>
 
                             <button className="button" onClick={e => this.setState({ isEscaping: 'no', isFluffyDoor: 'next' })}>POOP MY PANTS</button>
@@ -28,12 +36,18 @@ class Alohomora extends Component {
 
                 {this.state.isEscaping === 'yes' &&
                     <div>
-                        You escaped!
+                        <div>
+                        You escaped! ...and there's something in your pocket..
+                        </div>
+
+                        <div>
+                            <img src={stone} alt="stone" className="fluffy" onClick={e => this.setState({ isEscaping: '', isFluffyDoor:''})}/>
+                        </div>
                     </div>
                 }
                 {this.state.isEscaping === 'no' &&
                     <div>
-                        RIP you.
+                        <img src={rip} alt="RIP YOU" className="fluffy" onClick={e => this.setState({ isEscaping: '', isFluffyDoor:''})}/>
                     </div>
                 }
                 {this.state.isFluffyDoor === 'no' &&
@@ -53,12 +67,10 @@ class Alohomora extends Component {
                         <div>
                             Pick a door! If you are lucky, it won't be Fluffy's door.
                         </div>
-                        <div className="fluffy-buttons">
-                            <button className="fluffy-button" onClick={e => this.setState({ isFluffyDoor: 'yes'})}>1</button>
-
-                            <button className="fluffy-button" onClick={e => this.setState({ isFluffyDoor: 'no'})}>2</button>
-
-                            <button className="fluffy-button" onClick={e => this.setState({ isFluffyDoor: 'yes'})}>3</button>
+                        <div>
+                            <img src={trapdoor} className="trapdoor" alt="trapdoor painting by lilly piri" onClick={e => this.setState({ isFluffyDoor: 'yes' })}/>
+                            <img src={trapdoor} className="trapdoor" alt="trapdoor painting by lilly piri" onClick={e => this.setState({ isFluffyDoor: 'yes' })}/>
+                            <img src={trapdoor} className="trapdoor" alt="trapdoor painting by lilly piri" onClick={e => this.setState({ isFluffyDoor: 'yes' })}/>
                         </div>
                     </div>
                 }

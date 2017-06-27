@@ -1,21 +1,20 @@
+.twenty-six {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+}
 .fluffy-buttons {
     max-width: 100%;
 }
 
-.fluffy-button {
-    border-radius: 2px;
-    background-color: #59493d;
-    border: 2, 2, red;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 15px;
-    margin: 30px;
-    outline: none;
-    font-family: 'VT323', monospace;
-    transition: all 0.4s ease-in-out;
+.trapdoor {
+    display: block;
+    margin: auto;
+    padding: 20px;
 }
 
-.fluffy-button:hover {
-    background-color: #966f52;
+.fluffy {
+    display: block;
+    margin: auto;
+    padding: 20px;
 }
