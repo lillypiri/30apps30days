@@ -35,3 +35,9 @@
     text-align: center;
     position: relative;
 }
+
+@media only screen and (max-width: 500px){
+    .blush, .blush-arm, .blush-body img {
+        max-width: 100%;
+    }
+}
