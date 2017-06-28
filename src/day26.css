@@ -9,9 +9,10 @@
 
 .trapdoor {
     display: block;
-    margin: auto;
-    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
+
 
 .fluffy {
     display: block;
