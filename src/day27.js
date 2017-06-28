@@ -1,16 +1,6 @@
 import React, {Component} from 'react';
 import './day27.css'
 
-
-// fix rat
-// fix spider
-
-// google font
-// styling
-// update README
-// giphy capture
-
-
 const WIDTH = 10;
 const HEIGHT = 5;
 

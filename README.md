@@ -174,3 +174,5 @@ I used these resources to get me started with React:
 ### Day 27: Owl Post game
 - Owl can be moved with keyCodes and event listeners.
 - Owl can deliver post and eat rats.
+
+![Owl Post gif](https://media.giphy.com/media/3ohrylMgAHFeOEZ2rm/giphy.gif "owl post gif")
