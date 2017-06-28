@@ -1,7 +1,7 @@
 .ff-box {
     border-color: #740001;
     background: #ae0001;
-    border-radius: 10%;
+    border-radius: 25%;
     border-top: 1px solid #740001;
     border-bottom: 1px solid #740001;
     box-shadow: 0 15px 20px rgba(0,0,0,0.3), 0 1px 3px #740001, inset 0 1px 3px white, inset 0 -4px 5px #890406;
@@ -15,7 +15,7 @@
     padding-bottom: 10;
 }
 
-.gg-screen {
+.ff-screen {
        display: block;
        background: #a9c197;
        text-align: center;
@@ -23,7 +23,7 @@
        padding: 5px;
        padding-top: 5px;
        border-radius: 10px;
-       margin: 20px 10px 18px 35px;
+       margin: 40px 20px 18px 35px;
        box-shadow: inset 3px 3px 2px rgba(0,0,0,0.3), 1px 1px 1px grey, 0 -1px 2px white;
        height: 160px;
        width: 230px;
@@ -65,7 +65,7 @@
     height: 30px;
     display: block;
     position: absolute;
-    top: 250px;
+    top: 260px;
     left: 138px;
 }
 
@@ -91,7 +91,7 @@
     height: 30px;
     display: block;
     position: absolute;
-    top: 330px;
+    top: 340px;
     left: 138px;
 }
 
@@ -116,7 +116,7 @@
     width: 30px;
     height: 30px;
     display: block;
-    top: 291px;
+    top: 301px;
     left: 95px;
     position: absolute;
 }
@@ -142,7 +142,7 @@
     width: 30px;
     height: 30px;
     display: block;
-    top: 291px;
+    top: 301px;
     left: 180px;
     position: absolute;
 }
@@ -152,22 +152,25 @@
     text-shadow: 0 -1px 2px rgba(255,255,255,0.8), 0 1px 2px rgba(0,0,0,0.5), 0 -1px 1px black;
     font-size: 36px;
     margin-left: 20px;
-    font-family: 'Bungee Outline', cursive;
+    font-family: 'New Rocker', cursive;
     line-height: 36px;
     color: 	#d3a625;
     text-emphasis-color: #000000;
-    top: 205px;
+    top: 219px;
     left: 10px;
     position: absolute;
 }
 
 .ff-title-small {
+    vertical-align: middle;
+    margin-top: 10px;
     text-transform: lowercase;
     text-shadow: 0 -1px 2px rgba(255,255,255,0.8), 0 1px 2px rgba(0,0,0,0.5), 0 -1px 1px black;
     font-size: 18px;
     text-align: left;
-    margin-left: 1px;
-    font-family: 'Vibur', cursive;
+    margin-left: -5px;
+    font-family: 'New Rocker', cursive;
+    padding-left: 10px;
     line-height: 18px;
     color: 	#d3a625;
     text-emphasis-color: #000000;

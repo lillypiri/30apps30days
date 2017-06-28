@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
 import './day27.css'
 
+
+// fix rat
+// fix spider
+// google font
+// styling
+// update README
+// giphy capture
+
+
 const WIDTH = 10;
 const HEIGHT = 5;
 
@@ -18,7 +27,8 @@ class Hogwarts extends Component {
         grid[36] = "🕷️";
         grid[31] = "🏠";
         grid[30] = "📭 ";
-        grid[5] = "🦄";
+        grid[2] = "🦄";
+        grid[5] = "🐀"
         grid[8] = "📭 ";
         grid[9] = "🏚️";
         grid[41] = "🐍";
@@ -170,7 +180,7 @@ class Hogwarts extends Component {
         return (
             <div>
                 <section className="ff-box">
-                    <div className="gg-screen">
+                    <div className="ff-screen">
                         <div className="gg-screen-text">
                             <div>
                                 <div><span role="img" aria-label="letter emoji">✉️</span> deliveries: {this.state.letters}</div>
@@ -180,9 +190,9 @@ class Hogwarts extends Component {
                     </div>
                     <div className="ff-title">
                         <div>
-                            forbidden
+                            owl
                             <span className="ff-title-small">
-                                forest
+                                post
                             </span>
                         </div>
                         <div className="gg-brand-text">
@@ -203,7 +213,7 @@ class Hogwarts extends Component {
                     </div>
                 </section>
                 <div className="ff-text-description">
-                    Use arrow keys or buttons to deliver letters!
+                    Use arrow keys or buttons to deliver letters & pick up a rat-sized snack!
                 </div>
                 <div className="footer">
                     Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
