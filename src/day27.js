@@ -7,7 +7,7 @@ const HEIGHT = 5;
 class Hogwarts extends Component {
     constructor (props) {
         super(props);
-
+        this.keyPressed = this.keyPressed.bind(this)
         var grid = new Array(WIDTH * HEIGHT).fill('🌳');
 
 
@@ -21,11 +21,10 @@ class Hogwarts extends Component {
         grid[5] = "🦄";
         grid[8] = "📭 ";
         grid[9] = "🏚️";
-        grid[1] = "💀";
         grid[41] = "🐍";
         grid[44] = "🌕";
         grid[49] = "🐺";
-        grid[12] = "🐀 ";
+        grid[12] = "🐀";
         grid[16] = "✨";
         grid[23] = "📭 ";
         grid[24] = "🏘️";
@@ -45,6 +44,35 @@ class Hogwarts extends Component {
 
     }
 
+    keyPressed (e){
+        e.preventDefault();
+
+        switch (e.keyCode) {
+            case 38:
+                this.onButtonClick("up");
+                break;
+            case 40:
+                this.onButtonClick("down");
+                break;
+            case 37:
+                this.onButtonClick("left");
+                break;
+            case 39:
+                this.onButtonClick("right");
+                break;
+            default:
+                return;
+        }
+    }
+
+    componentDidMount () {
+        window.addEventListener('keydown', this.keyPressed);
+    }
+
+    componentWillUnmount () {
+        window.removeEventListener('keydown', this.keyPressed);
+    }
+
     onButtonClick (direction) {
         var grid = this.state.grid;
         var player_position = this.state.player_position;
@@ -56,6 +84,7 @@ class Hogwarts extends Component {
                 grid[player_position] = this.initial_grid[player_position];
                 if (grid[player_position] === "📭 ") {
                     grid[player_position] = "📬 "
+                    this.initial_grid[player_position] = "📬 "
                     letters ++;
                 }
                 player_position = player_position - WIDTH;
@@ -66,6 +95,7 @@ class Hogwarts extends Component {
                 grid[player_position] = this.initial_grid[player_position];
                 if (grid[player_position] === "📭 ") {
                     grid[player_position] = "📬 "
+                    this.initial_grid[player_position] = "📬 "
                     letters ++;
                 }
                 player_position = player_position + WIDTH;
@@ -76,6 +106,12 @@ class Hogwarts extends Component {
                 grid[player_position] = this.initial_grid[player_position];
                 if (grid[player_position] === "📭 ") {
                     grid[player_position] = "📬 "
+                    this.initial_grid[player_position] = "📬 "
+                    letters ++;
+                }
+                if (grid[player_position] === "🐀") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ "
                     letters ++;
                 }
                 player_position = player_position - 1;
@@ -86,6 +122,7 @@ class Hogwarts extends Component {
                 grid[player_position] = this.initial_grid[player_position];
                 if (grid[player_position] === "📭 ") {
                     grid[player_position] = "📬 "
+                    this.initial_grid[player_position] = "📬 "
                     letters ++;
                 }
                 player_position = player_position + 1;
@@ -136,7 +173,7 @@ class Hogwarts extends Component {
                     <div className="gg-screen">
                         <div className="gg-screen-text">
                             <div>
-                                <div>✉️ deliveries: {this.state.letters}</div>
+                                <div><span role="img" aria-label="letter emoji">✉️</span> deliveries: {this.state.letters}</div>
                                 {this.renderGrid()}
                             </div>
                         </div>
@@ -165,7 +202,9 @@ class Hogwarts extends Component {
                     <div className="gg-speakers">
                     </div>
                 </section>
-
+                <div className="ff-text-description">
+                    Use arrow keys or buttons to deliver letters!
+                </div>
                 <div className="footer">
                     Fork this on my github <a href="https://github.com/lillypiri/30apps30days">@lillypiri</a>.
                     <div>
