@@ -165,3 +165,12 @@ I used these resources to get me started with React:
 
 ### Day 25: Blush
 - Used CSS to animate layers of an image.
+
+### Day 26: Trapdoor
+- Harry Potter themed game
+- Pick-a-door game.
+
+
+### Day 27: Owl Post game
+- Owl can be moved with keyCodes and event listeners.
+- Owl can deliver post and eat rats.

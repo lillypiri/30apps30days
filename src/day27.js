@@ -4,6 +4,7 @@ import './day27.css'
 
 // fix rat
 // fix spider
+
 // google font
 // styling
 // update README
@@ -97,6 +98,14 @@ class Hogwarts extends Component {
                     this.initial_grid[player_position] = "📬 "
                     letters ++;
                 }
+                if (grid[player_position] === "🐀") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
+                }
+                if (grid[player_position] === "🕷️") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
+                }
                 player_position = player_position - WIDTH;
                 grid[player_position] = "🦉";
                 break;
@@ -107,6 +116,14 @@ class Hogwarts extends Component {
                     grid[player_position] = "📬 "
                     this.initial_grid[player_position] = "📬 "
                     letters ++;
+                }
+                if (grid[player_position] === "🐀") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
+                }
+                if (grid[player_position] === "🕷️") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
                 }
                 player_position = player_position + WIDTH;
                 grid[player_position] = "🦉";
@@ -121,8 +138,11 @@ class Hogwarts extends Component {
                 }
                 if (grid[player_position] === "🐀") {
                     grid[player_position] = "☠️ "
-                    this.initial_grid[player_position] = "☠️ "
-                    letters ++;
+                    this.initial_grid[player_position] = "☠️ ";
+                }
+                if (grid[player_position] === "🕷️") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
                 }
                 player_position = player_position - 1;
                 grid[player_position] = "🦉";
@@ -134,6 +154,14 @@ class Hogwarts extends Component {
                     grid[player_position] = "📬 "
                     this.initial_grid[player_position] = "📬 "
                     letters ++;
+                }
+                if (grid[player_position] === "🐀") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
+                }
+                if (grid[player_position] === "🕷️") {
+                    grid[player_position] = "☠️ "
+                    this.initial_grid[player_position] = "☠️ ";
                 }
                 player_position = player_position + 1;
                 grid[player_position] = "🦉";
