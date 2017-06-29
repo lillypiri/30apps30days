@@ -1,0 +1,37 @@
+.twenty-eight {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Leckerli One', cursive;
+    margin-bottom: 20px;
+}
+
+.donut-wrapper {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+    border-bottom: 2px solid black;
+}
+
+.donut {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    transition: top 0.1s ease;
+    background-size: cover;
+    cursor: grabbing;
+}
+
+.donut-up {
+    top: 0;
+}
+
+.donut-score {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
