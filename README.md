@@ -176,3 +176,10 @@ I used these resources to get me started with React:
 - Owl can deliver post and eat rats.
 
 ![Owl Post gif](https://media.giphy.com/media/3ohrylMgAHFeOEZ2rm/giphy.gif "owl post gif")
+
+### Day 28: Avocado Smash! 🥑
+- CSS animations
+- Uses timers
+- Whack-a-Mole Australian Millenial edition
+
+![Avocado Smash gif](https://media.giphy.com/media/xUOrw7LUQh6xBjAUms/giphy.gif "avocado smash gif")
