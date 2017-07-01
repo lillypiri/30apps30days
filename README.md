@@ -177,9 +177,21 @@ I used these resources to get me started with React:
 
 ![Owl Post gif](https://media.giphy.com/media/3ohrylMgAHFeOEZ2rm/giphy.gif "owl post gif")
 
+
 ### Day 28: Avocado Smash! 🥑
 - CSS animations
 - Uses timers
 - Whack-a-Mole Australian Millenial edition
 
 ![Avocado Smash gif](https://media.giphy.com/media/xUOrw7LUQh6xBjAUms/giphy.gif "avocado smash gif")
+
+
+### Day 29: Donut Drop 🍩
+- Use drag and drop and touch handlers for mobile.
+
+
+### Day 30: Watch TV with Ruby & Mags 📺
+- z index for layers
+- Youtube embedding with URL parameters.
+
+![Watch tv gif](https://media.giphy.com/media/3og0IOahykIjY2D6Io/giphy.gif "watch tv gif")
