@@ -1,0 +1,24 @@
+.thirty {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    width: 600px;
+    position: relative;
+}
+
+.player {
+    position: absolute;
+    width: 200px;
+    height: 140px;
+    top: 62px;
+    left: 46px;
+    transform: rotate(-13deg);
+    z-index: 9;
+}
+
+.ruby-mags-tv {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    z-index: 10;
+}
