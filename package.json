@@ -3,23 +3,43 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "es6-promise": "^4.1.0",
     "every-dice": "1.0.1",
+    "imitation": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-loading-animation": "^1.3.0",
     "react-scripts": "1.0.7",
     "remarkable": "^1.7.1",
-    "serve": "^5.1.5"
+    "serve": "^5.1.5",
+    "tap-nyan": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "enzyme": "^2.9.1",
+    "react-test-renderer": "^15.5.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "ava test",
     "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   },
   "homepage": "https://th1rty.herokuapp.com"
 }

@@ -39,7 +39,7 @@ class Day1 extends Component {
 }
 // I'm using states (because the data is changing) to make the Pocky and stars appear and disappear.
 // The props need to be set up even though they won't be used.
-class Pocky extends Component {
+export class Pocky extends Component {
     constructor(props) {
         super(props);
         this.state = {
